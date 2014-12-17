@@ -1,58 +1,48 @@
-var Card = React.createClass({displayName: 'Card',
-  render: function() {
-    return (
-      React.createElement("div", {id: "card"}, 
-        React.createElement(CardTemplate, null)
-      )
-    )
-  }
-})
-
-var CardTemplate = React.createClass({displayName: 'CardTemplate',
-  render: function() {
-    return ( React.createElement("img", {src: "/images/magic-card-template.png", height: "300", width: "175"}) )
-  }
-})
-
+var fonts = [
+  "'Yellowtail', cursive",
+  "'Fauna One', serif",
+  "'Droid Sans Mono'",
+  "'Kreon', serif",
+  "'PT Serif', serif",
+  "'Monda', sans-serif",
+  "'Libre Baskerville', serif",
+  "'Alegreya Sans', sans-serif",
+  "'Ubuntu Condensed', sans-serif",
+  "'Yanone Kaffeesatz', sans-serif",
+  "'Audiowide', cursive",
+  "'Amaranth', sans-serif",
+  "'Damion', cursive"
+]
 
 var TypeForm = React.createClass({displayName: 'TypeForm',
   getInitialState: function() {
-
-    var fonts = [
-      "'Yellowtail', cursive",
-      "'Fauna One', serif",
-      "'Droid Sans Mono'",
-      "'Kreon', serif",
-      "'PT Serif', serif",
-      "'Monda', sans-serif",
-      "'Libre Baskerville', serif",
-      "'Alegreya Sans', sans-serif",
-      "'Ubuntu Condensed', sans-serif",
-      "'Yanone Kaffeesatz', sans-serif",
-      "'Audiowide', cursive",
-      "'Amaranth', sans-serif",
-      "'Damion', cursive"
-    ]
-
-    return { value: "", countTimes: 1, fontStyles: fonts }
+    return { letters: [] }
   },
 
   showOff: function(e) {
-    var countTimes = this.state.countTimes
+    var text = e.target.value.split("");
+    var letters = this.state.letters;
+    var i = Math.floor((Math.random() * fonts.length))
+    var lastLetter = text[text.length - 1];
+
+    if (text.length < letters.length) {
+      letters.pop();
+    } else {
+      letters.push({character: lastLetter, font: fonts[i]})
+    }
+
     this.setState({
-      value: e.target.value,
-      countTimes: countTimes + 1
+      letters: letters
     })
   },
 
   render: function() {
-    var fonts = this.state.fontStyles
-    var letters = this.state.value.split("").map(function(letter){
-      var i = Math.floor((Math.random() * 3))
+    var letters = this.state.letters.map(function(letter){
       return (
-        React.createElement("span", {style: {fontFamily: fonts[i]}}, letter)
+        React.createElement("span", {style: {fontFamily: letter.font}}, letter.character)
       )
     })
+
     return (
       React.createElement("div", null, 
         React.createElement("div", {className: "input", style: {float: "left"}}, 
@@ -66,6 +56,17 @@ var TypeForm = React.createClass({displayName: 'TypeForm',
   }
 })
 
+var LetterBox = React.createClass({displayName: 'LetterBox',
+
+  render: function() {
+    return (
+      React.createElement("span", {style: {fontFamily: this.props.letter}}, this.props.character)
+    )
+  }
+})
+
+
+
 var renderTyper = function() {
   React.render(
     React.createElement(TypeForm, null),
@@ -73,9 +74,3 @@ var renderTyper = function() {
   )
 }
 
-var renderCard = function() {
-  React.render(
-    React.createElement(Card, null),
-    document.getElementById("magic-cards")
-  )
-}

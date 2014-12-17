@@ -448,9 +448,5 @@ pre {
   .highlight .il {
     color: #099; }
 
-.input {
-  height: 900px; }
-
 .output {
-  height: 900px;
   max-width: 400px; }
