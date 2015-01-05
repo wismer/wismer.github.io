@@ -16,7 +16,7 @@
 .segment {
   border: 1px solid black;
   float: left;
-  width: 157px;
+  width: 160px;
   z-index: 0; }
   .segment.picker {
     border: none;
