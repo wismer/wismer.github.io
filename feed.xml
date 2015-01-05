@@ -6,8 +6,8 @@
 </description>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Jan 2015 14:43:09 -0500</pubDate>
-    <lastBuildDate>Mon, 05 Jan 2015 14:43:09 -0500</lastBuildDate>
+    <pubDate>Mon, 05 Jan 2015 14:45:54 -0500</pubDate>
+    <lastBuildDate>Mon, 05 Jan 2015 14:45:54 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -106,11 +106,9 @@
 
 </description>
         <pubDate>Mon, 22 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://wismer.github.io/react/2014/12/22/special-words.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/react/2014/12/22/special-words.html</guid>
+        <link>http://wismer.github.io/2014/12/22/special-words.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2014/12/22/special-words.html</guid>
         
-        
-        <category>react</category>
         
       </item>
     
