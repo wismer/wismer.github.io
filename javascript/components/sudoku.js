@@ -32,7 +32,7 @@ var generateLetters = function() {
 }
 
 var initialBoard = generateLetters();
-var TabTable = React.createClass({displayName: 'TabTable',
+var TabTable = React.createClass({
   getInitialState: function() {
     return { board: initialBoard, activeCell: {} };
   },
@@ -66,32 +66,32 @@ var TabTable = React.createClass({displayName: 'TabTable',
     var self = this;
     var rows = this.state.board.map(function(row, index){
       return (
-        React.createElement(TabTableRow, {moveKey: self.moveKey, activeCell: self.activeCell, row: row, x: index})
+        <TabTableRow moveKey={self.moveKey} activeCell={self.activeCell} row={row} x={index} />
       )
     })
     return (
-      React.createElement("div", {id: "tab-table"}, rows)
+      <div id='tab-table'>{rows}</div>
     )
   }
 })
 
-var TabTableRow = React.createClass({displayName: 'TabTableRow',
+var TabTableRow = React.createClass({
   render: function() {
     var self = this;
     var coord = { x: this.props.x };
     var letters = this.props.row.map(function(letter, index){
       coord.y = index;
       return (
-        React.createElement(Letter, React.__spread({moveKey: self.props.moveKey, activeCell: self.props.activeCell, coord: coord},  letter))
+        <Letter moveKey={self.props.moveKey} activeCell={self.props.activeCell} coord={coord} {...letter} />
       )
     })
     return (
-      React.createElement("div", {className: "letter-row"}, letters)
+      <div className='letter-row'>{letters}</div>
     )
   }
 })
 
-var Letter = React.createClass({displayName: 'Letter',
+var Letter = React.createClass({
   highlightCell: function(e) {
     this.refs.inputLetter.getDOMNode().focus();
     this.props.activeCell(e, this.props)
@@ -105,7 +105,7 @@ var Letter = React.createClass({displayName: 'Letter',
     var style = { backgroundColor: this.props.isActive ?  "#b4cdcd" : "#bbbbbb"  };
     var letter = this.props.letter
     return (
-      React.createElement("div", {onClick: this.highlightCell, style: style, className: "letter"}, letter, React.createElement("input", {onKeyDown: this.props.moveKey, ref: "inputLetter", className: "holder", type: "text", value: this.props.letter}))
+      <div onClick={this.highlightCell} style={style} className='letter'>{letter}<input onKeyDown={this.props.moveKey} ref="inputLetter" className='holder' type='text' value={this.props.letter}></input></div>
     )
   }
 })
@@ -113,7 +113,7 @@ var Letter = React.createClass({displayName: 'Letter',
 
 var renderTab = function() {
   React.render(
-    React.createElement(TabTable, null),
+    <TabTable />,
     document.getElementById("tab")
   )
 }

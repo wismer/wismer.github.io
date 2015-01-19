@@ -1,58 +1,48 @@
-var Card = React.createClass({
-  render: function() {
-    return (
-      <div id="card">
-        <CardTemplate />
-      </div>
-    )
-  }
-})
-
-var CardTemplate = React.createClass({
-  render: function() {
-    return ( <img src="/images/magic-card-template.png" height="300" width="175"></img> )
-  }
-})
-
+var fonts = [
+  "'Yellowtail', cursive",
+  "'Fauna One', serif",
+  "'Droid Sans Mono'",
+  "'Kreon', serif",
+  "'PT Serif', serif",
+  "'Monda', sans-serif",
+  "'Libre Baskerville', serif",
+  "'Alegreya Sans', sans-serif",
+  "'Ubuntu Condensed', sans-serif",
+  "'Yanone Kaffeesatz', sans-serif",
+  "'Audiowide', cursive",
+  "'Amaranth', sans-serif",
+  "'Damion', cursive"
+]
 
 var TypeForm = React.createClass({
   getInitialState: function() {
-
-    var fonts = [
-      "'Yellowtail', cursive",
-      "'Fauna One', serif",
-      "'Droid Sans Mono'",
-      "'Kreon', serif",
-      "'PT Serif', serif",
-      "'Monda', sans-serif",
-      "'Libre Baskerville', serif",
-      "'Alegreya Sans', sans-serif",
-      "'Ubuntu Condensed', sans-serif",
-      "'Yanone Kaffeesatz', sans-serif",
-      "'Audiowide', cursive",
-      "'Amaranth', sans-serif",
-      "'Damion', cursive"
-    ]
-
-    return { value: "", countTimes: 1, fontStyles: fonts }
+    return { letters: [] }
   },
 
   showOff: function(e) {
-    var countTimes = this.state.countTimes
+    var text = e.target.value.split("");
+    var letters = this.state.letters;
+    var i = Math.floor((Math.random() * fonts.length))
+    var lastLetter = text[text.length - 1];
+
+    if (text.length < letters.length) {
+      letters.pop();
+    } else {
+      letters.push({character: lastLetter, font: fonts[i]})
+    }
+
     this.setState({
-      value: e.target.value,
-      countTimes: countTimes + 1
+      letters: letters
     })
   },
 
   render: function() {
-    var fonts = this.state.fontStyles
-    var letters = this.state.value.split("").map(function(letter){
-      var i = Math.floor((Math.random() * 3))
+    var letters = this.state.letters.map(function(letter){
       return (
-        <span style={{fontFamily: fonts[i]}}>{letter}</span>
+        <span style={{fontFamily: letter.font}}>{letter.character}</span>
       )
     })
+
     return (
       <div>
         <div className="input" style={{float: "left"}}>
@@ -66,6 +56,17 @@ var TypeForm = React.createClass({
   }
 })
 
+var LetterBox = React.createClass({
+
+  render: function() {
+    return (
+      <span style={{fontFamily: this.props.letter}}>{this.props.character}</span>
+    )
+  }
+})
+
+
+
 var renderTyper = function() {
   React.render(
     <TypeForm />,
@@ -73,9 +74,3 @@ var renderTyper = function() {
   )
 }
 
-var renderCard = function() {
-  React.render(
-    <Card />,
-    document.getElementById("magic-cards")
-  )
-}

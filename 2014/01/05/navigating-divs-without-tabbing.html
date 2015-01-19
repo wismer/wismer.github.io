@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Using React for the First Time</title>
+    <title>Game of Life</title>
     <meta name="description" content="self-taught Rubyist, Hacker School Alum (w'14).
 ">
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -14,7 +14,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/react-with-addons.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://wismer.github.io/jekyll/update/2014/12/09/react-for-the-first-time.html">
+    <link rel="canonical" href="http://wismer.github.io/2014/01/05/navigating-divs-without-tabbing.html">
 </head>
 
 
@@ -66,31 +66,45 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Using React for the First Time</h1>
-    <p class="post-meta">Dec 9, 2014</p>
+    <h1 class="post-title">Game of Life</h1>
+    <p class="post-meta">Jan 5, 2014</p>
   </header>
 
   <article class="post-content">
-    <h3 id="the-ransom-note">the ransom note</h3>
+    <script src="/javascript/tabbing.js"></script>
 
-<p>This is simultaneously a test entry for the Blaggerator and a mini-post on <a href="http://facebook.github.io/react/">reactJS</a>.
-It is fun. It can do things. It was not difficult to write (but it was REALLY hard to wrap my mind around the core concepts).
-Most importantly, I didn’t get a headache from it (aside from the very beginning).</p>
+<link rel="stylesheet" type="text/css" href="/css/tabbing.css" />
 
-<p>Anyway, type below in the text box. Each letter will be randomly generated to the right.
-I hope to do something more sophisticated with this in a few days.</p>
+<p>Last April, a fellow batch-mate of mine from Hacker School
+did a presentation by rendering <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway’s Game of Life</a>
+in html. It was a memorable presentation; Game of Life I never heard of before,
+but more importantly, it was my first introduction to React.js. All the underpinnings of it,
+like how html fragments are broken up and abstracted out into XML-like “components” and
+how it works in the browser was foreign to me, but I at least was able to comprehend
+that React can be <em>fast</em>. The cells flashed off and on quickly with no hiccups.
+A jQuery rendering (also shown) was noticeably slower.</p>
 
-<script src="/javascript/react-stuff.js"></script>
+<p>So anyway, fast-forward to today - I gave replicating this project a try (the React part, at least).
+Surprisingly, it wasn’t terribly difficult to implement. Three components -</p>
 
-<script src="/javascript/card.jsx.js"></script>
+<ol>
+  <li><code>&lt;CellTable&gt;</code> - handles the state of the board/call stack.</li>
+  <li><code>&lt;CellRow&gt;</code> - holds the cells</li>
+  <li><code>&lt;Cell&gt;</code> - The cell itself - no state, but does respond to an <code>onClick</code> event
+that triggers a cell “culture” to form.</li>
+</ol>
 
-<script src="/javascript/deck.jsx.js"></script>
+<p>Outside functions determine what the new state would be, and that’s all there was to it.</p>
 
-<link href="http://fonts.googleapis.com/css?family=Yellowtail|Fauna+One|Droid+Sans+Mono|PT+Serif|Kreon|Monda|Libre+Baskerville|Alegreya+Sans|Ubuntu+Condensed|Yanone+Kaffeesatz|Audiowide|Amaranth|Damion" rel="stylesheet" type="text/css" />
+<p>A lot of fun to do!</p>
 
-<div id="magic-cards">
+<p>Click Me!</p>
 
-</div>
+<div id="tab"></div>
+<script type="text/javascript">
+  renderTab();
+</script>
+
 
   </article>
 </div>

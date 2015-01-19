@@ -1,4 +1,4 @@
-var FormField = React.createClass({displayName: 'FormField',
+var FormField = React.createClass({
   getInitialState: function() {
     return { expansions: [], collection: {}, currentView: [] }
   },
@@ -40,19 +40,19 @@ var FormField = React.createClass({displayName: 'FormField',
     console.log(this.state)
     var expansions = this.state.expansions.map(function(exp){
       return (
-        React.createElement("option", {value: exp.code}, exp.name)
+        <option value={exp.code}>{exp.name}</option>
       )
     })
 
     return (
-      React.createElement("div", {className: "expansion-list"}, 
-        React.createElement("button", {onClick: this.loadExpansions}, "load expansion list"), 
-        React.createElement("select", {onChange: this.getCards}, 
-          React.createElement("option", null, "Select An Expansion"), 
-          expansions
-        ), 
-        React.createElement(CardCarousel, {expansion: this.state.currentView})
-      )
+      <div className='expansion-list'>
+        <button onClick={this.loadExpansions}>load expansion list</button>
+        <select onChange={this.getCards}>
+          <option>Select An Expansion</option>
+          {expansions}
+        </select>
+        <CardCarousel expansion={this.state.currentView} />
+      </div>
     )
   }
 })
@@ -61,7 +61,7 @@ var FormField = React.createClass({displayName: 'FormField',
 
 var renderForm = function() {
   React.render(
-    React.createElement(FormField, null),
+    <FormField />,
     document.getElementById("form-comp")
   )
 }

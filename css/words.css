@@ -1,0 +1,83 @@
+#magic {
+  margin-left: -400px;
+  float: left;
+  width: 1200px; }
+  #magic a {
+    text-decoration: none;
+    color: #7CAAE4; }
+  #magic .expansion h5 {
+    margin: 0;
+    padding: 10px; }
+    #magic .expansion h5:hover {
+      background-color: rgba(43, 48, 59, 0.7);
+      color: #fcdde3; }
+  #magic .highlight {
+    background-color: #809a9f; }
+    #magic .highlight h5 {
+      margin: 0px;
+      padding: 10px; }
+  #magic .active-expansion h5 {
+    background-color: #2b303b;
+    color: #fcdde3;
+    margin: 0;
+    padding: 10px; }
+    #magic .active-expansion h5:hover {
+      background-color: #2b303b; }
+  #magic #card-list {
+    float: left;
+    background-color: #2b303b;
+    width: 200px; }
+    #magic #card-list .card h5 {
+      padding: 5px;
+      margin: 0px; }
+    #magic #card-list .card:hover {
+      background-color: #fdfdfd;
+      color: #2b303b; }
+    #magic #card-list .active-card {
+      background-color: #7b7b7b; }
+      #magic #card-list .active-card h5 {
+        color: #fcdde3;
+        padding: 5px;
+        margin: 0px; }
+  #magic #card-spotlight {
+    float: left; }
+    #magic #card-spotlight .text {
+      padding: 20px; }
+  #magic #card-detail {
+    background-color: #2b303b;
+    margin-left: 30px;
+    width: 600px;
+    padding: 20px; }
+
+#year-list {
+  float: left;
+  margin-left: -400px;
+  width: 240px; }
+
+.year {
+  padding: 20px;
+  float: left;
+  border: 1px solid #200020;
+  border-spacing: 2px 2px; }
+  .year:hover {
+    background-color: #200020;
+    color: white; }
+
+.year-active {
+  background-color: #200020;
+  padding: 20px;
+  float: left;
+  border: 1px solid #200020;
+  border-spacing: 2px 2px; }
+  .year-active:active {
+    background-color: #fdfdfd;
+    color: 1px solid #200020; }
+
+#set-list {
+  float: left;
+  width: 230px; }
+
+#active-set {
+  margin-left: 230px;
+  background-color: #2b303b;
+  color: #fcdde3; }

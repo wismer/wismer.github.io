@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TITLE!</title>
+    <title>icantthinkofagoodtitletouse</title>
     <description>self-taught Rubyist, Hacker School Alum (w&#39;14).
 </description>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Jan 2015 14:48:24 -0500</pubDate>
-    <lastBuildDate>Mon, 05 Jan 2015 14:48:24 -0500</lastBuildDate>
+    <pubDate>Sun, 18 Jan 2015 22:59:01 -0500</pubDate>
+    <lastBuildDate>Sun, 18 Jan 2015 22:59:01 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -227,6 +227,50 @@ I hope to do something more sophisticated with this in a few days.&lt;/p&gt;
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Game of Life</title>
+        <description>&lt;script src=&quot;/javascript/tabbing.js&quot;&gt;&lt;/script&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/tabbing.css&quot; /&gt;
+
+&lt;p&gt;Last April, a fellow batch-mate of mine from Hacker School
+did a presentation by rendering &lt;a href=&quot;http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&quot;&gt;Conway’s Game of Life&lt;/a&gt;
+in html. It was a memorable presentation; Game of Life I never heard of before,
+but more importantly, it was my first introduction to React.js. All the underpinnings of it,
+like how html fragments are broken up and abstracted out into XML-like “components” and
+how it works in the browser was foreign to me, but I at least was able to comprehend
+that React can be &lt;em&gt;fast&lt;/em&gt;. The cells flashed off and on quickly with no hiccups.
+A jQuery rendering (also shown) was noticeably slower.&lt;/p&gt;
+
+&lt;p&gt;So anyway, fast-forward to today - I gave replicating this project a try (the React part, at least).
+Surprisingly, it wasn’t terribly difficult to implement. Three components -&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;CellTable&amp;gt;&lt;/code&gt; - handles the state of the board/call stack.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;CellRow&amp;gt;&lt;/code&gt; - holds the cells&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;Cell&amp;gt;&lt;/code&gt; - The cell itself - no state, but does respond to an &lt;code&gt;onClick&lt;/code&gt; event
+that triggers a cell “culture” to form.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Outside functions determine what the new state would be, and that’s all there was to it.&lt;/p&gt;
+
+&lt;p&gt;A lot of fun to do!&lt;/p&gt;
+
+&lt;p&gt;Click Me!&lt;/p&gt;
+
+&lt;div id=&quot;tab&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  renderTab();
+&lt;/script&gt;
+
+</description>
+        <pubDate>Sun, 05 Jan 2014 00:00:00 -0500</pubDate>
+        <link>http://wismer.github.io/2014/01/05/navigating-divs-without-tabbing.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2014/01/05/navigating-divs-without-tabbing.html</guid>
+        
         
       </item>
     
