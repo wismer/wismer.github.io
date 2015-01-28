@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>All Things in Good Time</title>
+    <title>React Sound</title>
     <meta name="description" content="self-taught Rubyist, Hacker School Alum (w'14).
 ">
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -14,7 +14,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/react-with-addons.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://wismer.github.io/">
+    <link rel="canonical" href="http://wismer.github.io/2015/01/26/sounds.html">
 </head>
 
 
@@ -63,63 +63,24 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-  <h1 class="page-heading">Posts</h1>
+        <div class="post">
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jan 26, 2015</span>
+  <header class="post-header">
+    <h1 class="post-title">React Sound</h1>
+    <p class="post-meta">Jan 26, 2015</p>
+  </header>
 
-        <h2>
-          <a class="post-link" href="/2015/01/26/sounds.html">React Sound</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 23, 2015</span>
+  <article class="post-content">
+    <audio src="/external/test.ogg" controls=""></audio>
 
-        <h2>
-          <a class="post-link" href="/2015/01/23/enforcing-types.html">Enforcing Types in Ruby</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 5, 2015</span>
+<p>Not much in this post, but thankfully I was able to figure out the audio API for gathering data. React here is updating 
+every ~50ms. It’s nice to see it work - I wanted to mimick the decibel meter that I got so used to seeing back in the day with WinAmp.</p>
 
-        <h2>
-          <a class="post-link" href="/2015/01/05/navigating-divs-without-tabbing.html">Game of Life</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 22, 2014</span>
+<script src="/javascript/sound.js"></script>
 
-        <h2>
-          <a class="post-link" href="/2014/12/22/special-words.html">Special Words</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 11, 2014</span>
+<div style="height: 200px;" id="analyser"></div>
 
-        <h2>
-          <a class="post-link" href="/2014/12/11/preserving-state-in-react.html">Preserving State in React</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Dec 9, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2014/12/09/react-for-the-first-time.html">Using React for the First Time</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
+  </article>
 </div>
 
       </div>
