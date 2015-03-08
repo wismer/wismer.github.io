@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Eventual Discovery</title>
+    <meta name="description" content="self-taught Rubyist, Hacker School Alum (w'14).
+">
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/JSXTransformer.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/react-with-addons.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://wismer.github.io/2015/03/08/eventual-discovery.html">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <!-- <a class="site-title" href="/">All Things in Good Time</a> -->
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Eventual Discovery</h1>
+    <p class="post-meta">Mar 8, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Much like reading a book, sequential reading and writing of programming code has been my primary way of undestanding the subject matter. From top-down, I initialize some things, make some methods or functions that get called depending on certain parameters, and then execute; delivering whatever output that I so desire. Perhaps there might be a loop somewhere in there for data that isn’t reliable (like data over TCP), but generally this is how it goes.</p>
+
+<p>Almost a year ago I wrote my BitTorrent client in Ruby in this particular way. Generally, it works like this:</p>
+
+<ol>
+  <li>A torrent file gets read, the data gets interpreted.</li>
+  <li>Using the interpreted data, a connection is made to either an HTTP or UDP tracker url.</li>
+  <li>On a <em>successful</em> response, a list of Peer objects is constructed.</li>
+  <li>With those peers, requests for connection are made over TCP.</li>
+  <li>Regardless of connection status, a loop begins that either terminates when all peers refuse connection, or the file in question has been successfully downloaded. Below is the meat of my client program:</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># this is an iteration over a list of *active* peers, whereupon each socket is checked</span>
+<span class="c1"># for any incoming data that utilize Ruby&#39;s non-blocking IO</span>
+<span class="k">def</span> <span class="nf">messager</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">blk</span><span class="p">)</span>
+  <span class="k">if</span> <span class="vi">@buffer</span><span class="o">.</span><span class="n">empty?</span>
+    <span class="n">recv</span> <span class="c1"># more data gets downloaded</span>
+  <span class="k">else</span>
+    <span class="c1"># the buffer is a String object, and depending upon the 5th byte</span>
+    <span class="c1"># (usually determines what message is), a choice is made.</span>
+    <span class="k">case</span> <span class="vi">@buffer</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span>
+    <span class="k">when</span> <span class="kp">nil</span>
+      <span class="c1"># *probably* a KEEP_ALIVE message; basically the peer is acknowledging you, but isn&#39;t</span>
+      <span class="c1"># ready yet.</span>
+      <span class="vi">@buffer</span><span class="o">.</span><span class="n">slice!</span><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">3</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@buffer</span><span class="o">[</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">3</span><span class="o">]</span> <span class="o">==</span> <span class="no">KEEP_ALIVE</span>
+    <span class="k">when</span> <span class="no">HANDSHAKE</span>
+      <span class="c1"># initial transmission of data from peer.</span>
+      <span class="n">parse_handshake</span>
+    <span class="k">when</span> <span class="no">BITFIELD</span>
+      <span class="c1"># a description of what chunks of data they have concerning the file(s)</span>
+      <span class="n">bitfield</span><span class="o">.</span><span class="n">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">bit</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
+        <span class="n">blk</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="vi">@socket</span><span class="p">)</span> <span class="k">if</span> <span class="n">bit</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span>
+      <span class="k">end</span>
+
+      <span class="n">send_interested</span> <span class="k">if</span> <span class="vi">@buffer</span><span class="o">.</span><span class="n">empty?</span>
+    <span class="k">when</span> <span class="no">HAVE</span>
+      <span class="c1"># similar to bitfield, but much smaller</span>
+      <span class="k">if</span> <span class="vi">@buffer</span><span class="o">.</span><span class="n">bytesize</span> <span class="o">&lt;</span> <span class="mi">9</span>
+        <span class="n">recv</span>
+      <span class="k">else</span>
+        <span class="c1"># see this curried proc? It&#39;s lame and confusing. But it works.</span>
+        <span class="n">have</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="n">blk</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="vi">@socket</span><span class="p">)</span> <span class="p">}</span>
+      <span class="k">end</span>
+      <span class="n">send_interested</span> <span class="k">if</span> <span class="vi">@buffer</span><span class="o">.</span><span class="n">empty?</span>
+    <span class="k">when</span> <span class="no">INTERESTED</span>
+      <span class="n">parse_interested</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+    <span class="k">when</span> <span class="no">PIECE</span>
+      <span class="c1"># probably the most complicated part. Not all pieces are created equal.</span>
+      <span class="n">parse_piece</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+    <span class="k">when</span> <span class="no">CANCEL</span>
+      <span class="vi">@socket</span><span class="o">.</span><span class="n">close</span>
+    <span class="k">else</span>
+      <span class="n">recv</span>
+      <span class="nb">send</span><span class="p">(</span><span class="no">KEEP_ALIVE</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>TL;DR: Whatever is in the TCP pipeline gets interpreted and depending on several conditions, a method/function is called and the loop continues on with another connection. It’s a functional approach, but as the program grew more complex, this massive loop began causing me a lot of headaches. Pretty soon I was flipping between multiple files/ruby objects, trying to track down bugs, adding features and proceeding to rip my hair out.</p>
+
+<h3 id="theres-another-way-to-do-this">There’s another way to do this.</h3>
+
+<p>A bit of a tangent, but I love the web-app building rubygem <a href="https://sinatrarb.com">Sinatra</a>. Got a GET request heading to your root address?</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">get</span> <span class="s2">&quot;/&quot;</span> <span class="k">do</span>
+  <span class="c1"># render something!</span>
+<span class="k">end</span></code></pre></div>
+
+<p>As simple as this is, there’s a lot going on underneath that allows such a construction to work well and efficiently. Much of this has to do with writing a program that is <strong>event driven</strong>. I don’t know what the underpinnings are for how Sinatra works, but I have a basic understanding of it. To illustrate how it works, I’ll implement this with my BitTorrent client.</p>
+
+<h3 id="the-setup">The Setup</h3>
+
+<p>Principally, there are three Ruby objects that are in play, here:</p>
+
+<ol>
+  <li>PeerSession - inherits methods and properties from TCPSocket, with some custom ones added in.</li>
+  <li>PieceReactor - emits events depending on circumstances of whatever data that is coming from PeerSession objects</li>
+  <li>PeerEvent - An object with callbacks, generated by PieceReactor</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">PeerSession</span> <span class="o">&lt;</span> <span class="no">TCPSocket</span>
+  <span class="kp">attr_accessor</span> <span class="ss">:current_piece</span>
+  <span class="c1"># bunch of code handling the connection, and interepreting the incoming bytes</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">PieceReactor</span>
+  <span class="kp">extend</span> <span class="no">PeerEvent</span> <span class="c1"># I&#39;ll cover PeerEvent in a moment</span>
+
+  <span class="n">on</span> <span class="ss">:handshake</span> <span class="k">do</span> <span class="o">|</span><span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="o">|</span>
+    <span class="c1"># On a handshake response, execute this block!</span>
+  <span class="k">end</span>
+
+  <span class="n">on</span> <span class="ss">:interested</span> <span class="k">do</span> <span class="o">|</span><span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="o">|</span>
+    <span class="c1"># On an interested response, execute this block!</span>
+  <span class="k">end</span>
+
+  <span class="c1"># other &quot;on X&quot; events</span>
+
+  <span class="k">def</span> <span class="nf">connect</span>
+    <span class="c1"># initializes PeerSession objects, @peers, that are passed on to #tick on a loop</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">tick</span>
+    <span class="vi">@peers</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">peer</span><span class="o">|</span>
+      <span class="n">peer</span><span class="o">.</span><span class="n">peer_write</span>
+      <span class="n">peer</span><span class="o">.</span><span class="n">read_messages</span> <span class="k">do</span> <span class="o">|</span><span class="n">msg</span><span class="o">|</span>
+        <span class="k">case</span> <span class="n">msg</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span>
+        <span class="k">when</span> <span class="mi">1</span>
+          <span class="n">emit</span><span class="p">(</span><span class="ss">:interested</span><span class="p">,</span> <span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">when</span> <span class="mi">4</span>
+          <span class="n">emit</span><span class="p">(</span><span class="ss">:have</span><span class="p">,</span> <span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">when</span> <span class="mi">5</span>
+          <span class="n">emit</span><span class="p">(</span><span class="ss">:bitfield</span><span class="p">,</span> <span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">when</span> <span class="mi">7</span>
+          <span class="n">peer</span><span class="o">.</span><span class="n">current_piece</span> <span class="o">=</span> <span class="n">msg</span>
+          <span class="n">emit</span><span class="p">(</span><span class="ss">:piece</span><span class="p">,</span> <span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">when</span> <span class="ss">:handshake</span>
+          <span class="n">emit</span><span class="p">(</span><span class="ss">:handshake</span><span class="p">,</span> <span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">when</span> <span class="ss">:keep_alive</span>
+          <span class="n">emit</span><span class="p">(</span><span class="ss">:keep_alive</span><span class="p">,</span> <span class="n">peer</span><span class="p">,</span> <span class="n">msg</span><span class="p">)</span>
+        <span class="k">when</span> <span class="ss">:wait</span>
+          <span class="c1"># do nothing</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>What is <code>on</code> and <code>emit</code> doing? Where are they defined? Why am I extending <code>PeerEvent</code> to <code>PieceReactor</code>?</p>
+
+<p>So, <code>on</code> is a <code>PeerEvent</code> method. By itself, it does nothing - why?</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">callbacks</span>
+  <span class="vi">@callbacks</span> <span class="o">||=</span> <span class="no">Hash</span><span class="o">.</span><span class="n">new</span> <span class="p">{</span> <span class="o">|</span><span class="nb">hash</span><span class="p">,</span> <span class="n">key</span><span class="o">|</span> <span class="nb">hash</span><span class="o">[</span><span class="n">key</span><span class="o">]</span> <span class="o">=</span> <span class="o">[]</span> <span class="p">}</span>
+<span class="k">end</span></code></pre></div>
+
+<p><code>callbacks</code> stands as a collection of proc objects. To fill the collection, you’d write out <code>on</code> methods like the ones I mentioned above and save it as <code>proc</code> objects waiting to be called.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">on</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">blk</span><span class="p">)</span>
+  <span class="n">callbacks</span><span class="o">[</span><span class="n">type</span><span class="o">]</span> <span class="o">&lt;&lt;</span> <span class="n">blk</span>
+  <span class="nb">self</span>
+<span class="k">end</span></code></pre></div>
+
+<p><code>emit</code> is the endpoint and the most crucial part - when something specific happens, reference that specific callback and call it, using the symbol representing it (the one that was used with <code>on</code>) to access the proc in the collection and call it, passing any arguments that it requires.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">emit</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+  <span class="n">callbacks</span><span class="o">[</span><span class="n">type</span><span class="o">].</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></div>
+
+<p>The great advantage in this strategy isn’t speed, but for a programmer’s piece of mind - it is easier to compose and localize actions to occur in a specific location, and not have to create custom objects for every instance that could be strewn across multiple files. It feels cleaner, and easier to debug. Added to this, by extending the <code>PeerEvent</code> module to <code>PieceReactor</code> the exposure to important variables is preserved and readily accessible to the proc objects. This can significantly reduce the headaches caused when trying to things together, <strong>just so it can work</strong>. I hope to delve deeper into this topic later on!</p>
+
+  </article>
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li><a href="mailto:matthewhl@gmail.com">matthewhl@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/wismer">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">wismer</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/WismerTrashCry">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">WismerTrashCry</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">self-taught Rubyist, Hacker School Alum (w'14).
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,144 +1,115 @@
-var dataSet = [];
-var limit = 100;
-var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+// oscilattor
+// feed frequency to cascade component
+// onended event - clear intervals
 
-var generateData = function() {
-  var instance = [];
-  // transitionUp -> from x to y
-  // maxExtent -> y
-  // transitionDown -> from y to x
-  var prevState = 0;
-  for (var i = 0; i < 100; i++) {
-    var set = { prevState: prevState };
-    var likelihood = limit - prevState // if it was 30, it's now 70
-    var randomNum = Math.floor(Math.random() * limit);
-    var range = (prevState / 10) + 1;
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
+var context = new AudioContext();
+var request = new XMLHttpRequest();
+var song = document.querySelector("audio");
 
-    if (likelihood > randomNum) {
-      // goes up
-      prevState += range;
-    } else {
-      // goes down
-      prevState -= range;
+// song.onplay = function(e) {
+//   request.open("GET", "/external/test.ogg", true);
+//   request.responseType = 'arraybuffer';
+//   request.onload = function() {
+//     context.decodeAudioData(request.response, function(buffer) {
+//       var source = context.createBufferSource();
+//       var analyser = context.createAnalyser();
+//       source.buffer = buffer;
+//       source.connect(analyser);
+//       source.start(0);
+//       analyser.fftSize = 128;
+//       React.render(
+//         <Cascade analyser={analyser} />,
+//         document.getElementById("analyser")
+//       )
+//     })
+//   }
+//   request.send();
+
+request.open("GET", "/external/test.ogg", true);
+request.responseType = 'arraybuffer';
+request.onload = function() {
+  context.decodeAudioData(request.response, function(buffer) {
+    song.onplay = function(e) {
+      var source = context.createBufferSource();
+      var analyser = context.createAnalyser();
+      source.buffer = buffer;
+      source.connect(analyser);
+      source.connect(context.destination)
+      source.start(0);
+      analyser.fftSize = 128;
+      React.render(
+        <Cascade analyser={analyser} />,
+        document.getElementById("analyser")
+      )
     }
-
-    set.extent = prevState;
-    instance.push(set);
-  }
-
-  dataSet.push(instance);
-};
-
-var stroke = function(x,y) {
-
+  })
 }
 
-stroke({x: [0,25], y: []});
 
-var letters = {
-  A: [{  }],
-  B: [],
-  C: [],
-  D: [],
+request.send();
 
-}
-
-var Graph = React.createClass({
+var Cascade = React.createClass({
   getInitialState: function() {
-    return { currentStep: 0 };
+    var rows = [];
+
+    for (var i = 0; i < 128; i++) {
+      rows[i] = { level: 0, max: 0 };
+    }
+    return {
+      decibel: 0,
+      record: rows
+    }
   },
 
-  componentDidMount: function() {
-    setInterval(this.handleUpdateRows, 200);
+  componentWillMount: function() {
+    setInterval(this.measure, 50)
   },
 
-  handleUpdateRows: function() {
-    var currentStep = this.state.currentStep + 1;
-    this.setState({ currentStep: currentStep })
+  measure: function() {
+    var analyser = this.props.analyser;
+    var array = new Float32Array(analyser.frequencyBinCount);
+    analyser.getFloatFrequencyData(array);
+    var records = this.state.record;
+
+    for (var i = 0; i < array.length; i++) {
+      var prevDec = records[i];
+      var currentDec = (array[i] + 140) > 0 ? array[i] + 140 : 0;
+      prevDec.level = currentDec;
+      if (currentDec < (prevDec.max - 10)) {
+        // find the difference between the current reading and the previous "max"
+        // and then halve it. Let that represent the new position of max.
+        prevDec.max -= (prevDec.max - currentDec) / 2;
+      } else if (currentDec > prevDec.max) {
+        prevDec.max = currentDec;
+      }
+
+      records[i] = prevDec;
+    }
+    this.setState({ record: records })
   },
 
   render: function() {
-    var currentStep = this.state.currentStep;
-    // 0 is the initial step
-    var sets = this.props.data.map(function(set, index){
-      // the step is passed over to the column
-      return (
-        <Column set={set} step={currentStep} index={index} />
-      )
+    var renderRows = this.state.record.map(function(row, i){
+      return <Row {...row} key={i} />
     })
 
-
     return (
-      <div id='graph'>
-        {sets}
+      <div id='boxes'>
+        {renderRows}
       </div>
     )
   }
 })
 
-// 100 steps
-// 100 * 100 cubes
-// each step informs the column how many boxes become active
-// need a better way to handle updating the boxes.
-
-var Column = React.createClass({
+var Row = React.createClass({
   render: function() {
-    var step = this.props.step;
-    var activeBox = this.props.set[step];
-    var number = Math.random() * 10;
-    var active = number > 4 ? "column" : "column column-active";
-    var height = number * 200;
-
-    var style = {
-      transition: "height 0.5 ease-in",
-      height: height + "px"
-    }
-
+    var decibel = this.props.level;
+    var maxBox = <div style={{width: 10, height: 5, backgroundColor: "red", marginTop: this.props.max}} className='max-box'></div>
     return (
-      <div className={active} style={style}></div>
+      <div style={{width: 10, marginRight: 1, float: "left", height: decibel + 1, backgroundColor: "black"}}  className='row'>
+        {maxBox}
+      </div>
     )
   }
 })
-
-// var Box = React.createClass({
-//   getInitialState: function() {
-//     return { current: 0 }
-//   },
-
-//   handleUpdateRows: function() {
-//     var current = this.state.current + 1;
-//     this.setState({ current: current })
-//   },
-
-//   componentDidMount: function() {
-//     setInterval(this.handleUpdateRows, 1000)
-//   },
-
-//   render: function() {
-//     return (
-
-//     )
-//   }
-// })
-
-var generateGraph = function() {
-  for (var i = 0; i < limit; i++) {
-    generateData();
-  }
-
-
-  React.render(
-    <Graph data={dataSet} />,
-    document.getElementById("graph-table")
-  )
-}
-
-// starts at 0
-// guaranteed to go up
-// the range it could go up to is 1 - 100, but the lower number is more likely...how to figure that?
-// the lower half is more likely... so, 1-50 is weighted more heavily
-
-// starts: 30
-// 70% chance up
-// if down, decreases by (difference / 10) -> 30 / 10 -> 30 - 3 -> goes to 27
-// if up, increases by (difference / 10) -> 30 + (30 / 3) -> goes to 31 to 33?
