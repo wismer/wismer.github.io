@@ -4,8 +4,8 @@
     <title>All Things in Good Time</title>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 08 Mar 2015 17:13:48 -0400</pubDate>
-    <lastBuildDate>Sun, 08 Mar 2015 17:13:48 -0400</lastBuildDate>
+    <pubDate>Mon, 09 Mar 2015 17:14:47 -0400</pubDate>
+    <lastBuildDate>Mon, 09 Mar 2015 17:14:47 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -161,7 +161,7 @@
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The great advantage in this strategy isn’t speed, but for a programmer’s piece of mind - it is easier to compose and localize actions to occur in a specific location, and not have to create custom objects for every instance that could be strewn across multiple files. It feels cleaner, and easier to debug. Added to this, by extending the &lt;code&gt;PeerEvent&lt;/code&gt; module to &lt;code&gt;PieceReactor&lt;/code&gt; the exposure to important variables is preserved and readily accessible to the proc objects. This can significantly reduce the headaches caused when trying to things together, &lt;strong&gt;just so it can work&lt;/strong&gt;. I hope to delve deeper into this topic later on!&lt;/p&gt;
+&lt;p&gt;The great advantage in this strategy isn’t speed, but for a programmer’s peace of mind - it is easier to compose and localize actions to occur in a specific location, and not have to create custom objects for every instance that could be strewn across multiple files. It feels cleaner, and easier to debug. Added to this, by extending the &lt;code&gt;PeerEvent&lt;/code&gt; module to &lt;code&gt;PieceReactor&lt;/code&gt; the exposure to important variables is preserved and readily accessible to the proc objects. This can significantly reduce the headaches caused when trying to things together, &lt;strong&gt;just so it can work&lt;/strong&gt;. I hope to delve deeper into this topic later on!&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Mar 2015 00:00:00 -0500</pubDate>
         <link>http://wismer.github.io/2015/03/08/eventual-discovery.html</link>
