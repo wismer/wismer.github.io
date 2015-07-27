@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Special Words</title>
-    <meta name="description" content="self-taught Rubyist, Hacker School Alum (w'14).
+    <meta name="description" content="self-taught Rubyist, Recurse Center Alum (w'14).
 ">
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/JSXTransformer.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.12.1/react-with-addons.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="http://wismer.github.io/2014/12/22/special-words.html">
 </head>
@@ -53,6 +54,8 @@
         
           
         
+          
+        
       </div>
     </nav>
 
@@ -73,7 +76,9 @@
   <article class="post-content">
     <link rel="stylesheet" type="text/css" href="/css/list.css" />
 
-<script src="/javascript/sudoku.js"></script>
+<script src="/javascript/react-with-addons.js"></script>
+
+<script src="/javascript/sudoku-board.js"></script>
 
 <p>React is all about encouraging the <a href="http://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html">‘statelessness’ of React components</a>. It makes for more straightforward code and makes it easier to track down problems. I wanted to explore this side of React more as my previous experiments have relied heavily on state, so I ended up settling on an interactive Sudoku game (this makes for a great <a href="https://www.hackerschool.com">hacker school</a> project <em>wink</em> <em>wink</em>). Breaking down the game into React components was a pretty straightforward process:</p>
 
@@ -160,7 +165,7 @@
 <div id="game"></div>
 
 <script type="text/javascript">
-  renderBoard();
+  renderTab();
 </script>
 
 
@@ -216,7 +221,7 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">self-taught Rubyist, Hacker School Alum (w'14).
+        <p class="text">self-taught Rubyist, Recurse Center Alum (w'14).
 </p>
       </div>
     </div>

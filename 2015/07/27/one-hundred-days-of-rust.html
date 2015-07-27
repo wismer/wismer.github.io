@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>React Sound</title>
+    <title>100 days of Learning Rust</title>
     <meta name="description" content="self-taught Rubyist, Recurse Center Alum (w'14).
 ">
     <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
@@ -15,7 +15,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://wismer.github.io/2015/01/26/sounds.html">
+    <link rel="canonical" href="http://wismer.github.io/2015/07/27/one-hundred-days-of-rust.html">
 </head>
 
 
@@ -69,19 +69,41 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">React Sound</h1>
-    <p class="post-meta">Jan 26, 2015</p>
+    <h1 class="post-title">100 days of Learning Rust</h1>
+    <p class="post-meta">Jul 27, 2015</p>
   </header>
 
   <article class="post-content">
-    <audio src="/external/test.ogg" controls=""></audio>
+    <p>Blogging about programming is tough. I often forget who that I am writing for and
+why. Eventually, I come back to the comfortable feeling and attitude that this blog is
+principally for myself, and myself only.</p>
 
-<p>Not much in this post, but thankfully I was able to figure out the audio API for gathering data. React here is updating 
-every ~50ms. It’s nice to see it work - I wanted to mimick the decibel meter that I got so used to seeing back in the day with WinAmp.</p>
+<p>A friend from <a href="http://recurse.com">Recurse Center</a>
+suggested to me that I start a dev diary while I work and grow as a nascent developer.
+It was a great idea, but I wasn’t sure what to write about. Should I do stuff about Ember.js, since
+that’s what I do most of my time at work? Or about Ruby, my first programming language?</p>
 
-<script src="/javascript/sound.js"></script>
+<p>Neither of these felt right. I want something fresh, something bizarre and incredibly difficult to learn.
+Something that has no immediate benefit that wouldn’t cloud my good intentions, but would at least
+expose me to some principles of computer science that I didn’t learn while earning my B.A. in Comparative Religions.</p>
 
-<div style="height: 200px;" id="analyser"></div>
+<p>Rust was it. It has all the wrong (right) things for me.</p>
+
+<ol>
+  <li>Statically typed</li>
+  <li>Strong Concurrency (My only exposure to concurrency was through experimenting with Ruby threads)</li>
+  <li>Scary systems programming language</li>
+  <li>No run-time environment (REPLs have been my primary vehicle for learning)</li>
+</ol>
+
+<p>So I may not get to 100 days, let alone straight, of writing about my experiences in learning Rust,
+but I’m really looking forward to the challenge.</p>
+
+<div class="highlight"><pre><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nb">println</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p><em>let’s do this</em></p>
 
   </article>
 </div>

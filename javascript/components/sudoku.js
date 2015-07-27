@@ -7,7 +7,7 @@ var Life = function() {
 }
 
 Life.prototype = {
-  
+
 }
 
 
@@ -47,7 +47,7 @@ var TabTable = React.createClass({
   moveKey: function(e) {
     if (_.contains(arrowKeys, e.which)) {
       if (e.which === 37) {
-        
+
       }
     }
   },
@@ -114,6 +114,6 @@ var Letter = React.createClass({
 var renderTab = function() {
   React.render(
     <TabTable />,
-    document.getElementById("tab")
+    document.getElementById("game")
   )
 }
