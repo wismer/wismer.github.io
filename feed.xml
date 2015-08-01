@@ -4,9 +4,86 @@
     <title>All Things in Good Time</title>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 28 Jul 2015 16:09:03 -0400</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2015 16:09:03 -0400</lastBuildDate>
+    <pubDate>Sat, 01 Aug 2015 16:37:41 -0400</pubDate>
+    <lastBuildDate>Sat, 01 Aug 2015 16:37:41 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>The Variables They Are (not) A Changin&#39;</title>
+        <description>&lt;style&gt;
+code {
+  font-size: 12px;
+}
+&lt;/style&gt;
+
+&lt;p&gt;Every time I start trying out something new in rust, I run into compiler errors
+complaining to me about things like mis-matched types, ‘cannot borrow variable’,
+etc. I go back to the chapters about “ownership” and “borrowing”
+(found in &lt;a href=&quot;https://doc.rust-lang.org/stable/book&quot;&gt;the rust book&lt;/a&gt;), read a little bit,
+then feel foolhardy enough to take another stab at it.&lt;/p&gt;
+
+&lt;p&gt;I feel like this is something foundational about the language and since I don’t yet
+have a full understanding of it, any &lt;em&gt;other&lt;/em&gt; part that I try to hack away
+at will be fraught with compiler errors. I’m not sure what I am missing.&lt;/p&gt;
+
+&lt;p&gt;To work this out better in my head, I’ll try imagining that I’m at a library looking
+for a book to borrow. There are three libraries accessible to me. One of them
+has the book “A Storm of Swords” that I want to read.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_in_queens&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Metaprogramming Ruby&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Ancillary Justice&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;The Great Gatsby&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_in_manhattan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SICP&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;The Little Schemer&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Linear Algebra&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_in_bronx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;A Storm of Swords&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;The Silmarrion&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I have a function called &lt;code&gt;library_has_book&lt;/code&gt; which takes a vector (of book titles),
+the book that I want, and, after iterating through the collection, returns a boolean value.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;A Storm of Swords&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// still not sure why I have to do this.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library_in_queens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// borrow the book&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Compiles. No problems.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library_in_manhattan&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// error: use of moved value: `book`&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;After using the book variable binding, I couldn’t use the binding itself again
+anywhere else. That seems like a maddening thing to keep track of but apparently I’ve been
+using a solution already - just not in the right place.&lt;/p&gt;
+
+&lt;p&gt;in &lt;code&gt;library_has_book&lt;/code&gt;, the arguments contain ampersands (&lt;code&gt;&amp;amp;&lt;/code&gt;). I’m not sure how strings are handled yet,
+as I see &lt;code&gt;&amp;amp;str&lt;/code&gt; used quite a bit, but the &lt;code&gt;Vec&amp;lt;&amp;amp;str&amp;gt;&lt;/code&gt; clued me in to what’s going on. The ampersands represent
+&lt;em&gt;references&lt;/em&gt; to the bindings that you pass in, and not the value itself. When the code gets executed,
+rust takes the references provided and goes to their location in memory, and then pulls the data from
+there while keeping the original binding intact.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library_in_queens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// `book` keeps it&amp;#39;s original meaning and place, and only provides a reference to it&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now &lt;code&gt;book&lt;/code&gt; can be used as much as needed, so long as the references are being made to it.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/08/01/ownership-and-you.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/08/01/ownership-and-you.html</guid>
+        
+        <category>rust,</category>
+        
+        <category>bindings</category>
+        
+        
+      </item>
     
       <item>
         <title>(a little bit) On the Variable Bindings of Rust</title>
@@ -631,40 +708,6 @@ letters that had randomly assigned font values by using this code in the render 
         <link>http://wismer.github.io/2014/12/11/preserving-state-in-react.html</link>
         <guid isPermaLink="true">http://wismer.github.io/2014/12/11/preserving-state-in-react.html</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>Using React for the First Time</title>
-        <description>&lt;h3 id=&quot;the-ransom-note&quot;&gt;the ransom note&lt;/h3&gt;
-
-&lt;p&gt;This is simultaneously a test entry for the Blaggerator and a mini-post on &lt;a href=&quot;http://facebook.github.io/react/&quot;&gt;reactJS&lt;/a&gt;.
-It is fun. It can do things. It was not difficult to write (but it was REALLY hard to wrap my mind around the core concepts).
-Most importantly, I didn’t get a headache from it (aside from the very beginning).&lt;/p&gt;
-
-&lt;p&gt;Anyway, type below in the text box. Each letter will be randomly generated to the right.
-I hope to do something more sophisticated with this in a few days.&lt;/p&gt;
-
-&lt;script src=&quot;/javascript/react-stuff.js&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;/javascript/card.jsx.js&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;/javascript/deck.jsx.js&quot;&gt;&lt;/script&gt;
-
-&lt;link href=&quot;http://fonts.googleapis.com/css?family=Yellowtail|Fauna+One|Droid+Sans+Mono|PT+Serif|Kreon|Monda|Libre+Baskerville|Alegreya+Sans|Ubuntu+Condensed|Yanone+Kaffeesatz|Audiowide|Amaranth|Damion&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-
-&lt;div id=&quot;magic-cards&quot;&gt;
-
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 09 Dec 2014 08:34:26 -0500</pubDate>
-        <link>http://wismer.github.io/jekyll/update/2014/12/09/react-for-the-first-time.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/jekyll/update/2014/12/09/react-for-the-first-time.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
