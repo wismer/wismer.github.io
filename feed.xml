@@ -4,9 +4,55 @@
     <title>All Things in Good Time</title>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Sep 2015 00:50:44 -0400</pubDate>
-    <lastBuildDate>Tue, 08 Sep 2015 00:50:44 -0400</lastBuildDate>
+    <pubDate>Tue, 08 Sep 2015 00:54:20 -0400</pubDate>
+    <lastBuildDate>Tue, 08 Sep 2015 00:54:20 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Components - The Silent Killer?</title>
+        <description>&lt;style&gt;
+  pre {
+    font-size: 10px;
+  }
+&lt;/style&gt;
+
+&lt;p&gt;Hi! I’m Troy McClure. You might remember me from such stirring blog posts as: &lt;i&gt;Computers are Great! But Do They Work?”&lt;/i&gt; and
+&lt;i&gt;“The Coffee Shop of Horrors: The Case of the Broken WiFi”&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s easy to get opinionated about certain things. The past few weeks for me was certainly no exception.&lt;/p&gt;
+
+&lt;p&gt;I really like the idea behind components in templates, and the way they can be reused in other parts
+of a website. But sometimes over-reliance on it, particularly if naming conventions are not followed
+(i.e. &lt;code&gt;base_field.html&lt;/code&gt; being a component of a component of a component isn’t terribly intuitive - &lt;em&gt;see below&lt;/em&gt;),
+then there will be &lt;del&gt;blood&lt;/del&gt; problems.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- basic_field.html --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { name } }-form-{ { field|field_type } } { { name } }-field&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.name } }-form-label&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.id_for_label } }&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{ { field } }{ { field.label } } { { field.help_text } }&lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.name } }-form-errors&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{ { field.errors } }&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That isn’t readable. And it’s used &lt;em&gt;everywhere&lt;/em&gt; on the website. If it weren’t
+for all the snippets of jQuery/3rd party libs littered throughout all the templates, this wouldn’t be
+so much of a problem to fix. But snagging out a single class name breaks crucial features.&lt;/p&gt;
+
+&lt;p&gt;There’s gotta be a better way. Definitely made me appreciate React and Ember a whole lot
+more.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/09/09/components-the-silent-killer.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/09/09/components-the-silent-killer.html</guid>
+        
+        <category>jquery</category>
+        
+        <category>forms</category>
+        
+        <category>react</category>
+        
+        <category>component</category>
+        
+        
+      </item>
     
       <item>
         <title>The Variables They Are (not) A Changin&#39;</title>
@@ -81,52 +127,6 @@ there while keeping the original binding intact.&lt;/p&gt;
         <category>rust,</category>
         
         <category>bindings</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Components - The Silent Killer?</title>
-        <description>&lt;style&gt;
-  pre {
-    font-size: 10px;
-  }
-&lt;/style&gt;
-
-&lt;p&gt;Hi! I’m Troy McClure. You might remember me from such stirring blog posts as: &lt;i&gt;Computers are Great! But Do They Work?”&lt;/i&gt; and
-&lt;i&gt;“The Coffee Shop of Horrors: The Case of the Broken WiFi”&lt;/i&gt;.&lt;/p&gt;
-
-&lt;p&gt;It’s easy to get opinionated about certain things. The past few weeks for me was certainly no exception.&lt;/p&gt;
-
-&lt;p&gt;I really like the idea behind components in templates, and the way they can be reused in other parts
-of a website. But sometimes over-reliance on it, particularly if naming conventions are not followed
-(i.e. &lt;code&gt;base_field.html&lt;/code&gt; being a component of a component of a component isn’t terribly intuitive - &lt;em&gt;see below&lt;/em&gt;),
-then there will be &lt;del&gt;blood&lt;/del&gt; problems.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- basic_field.html --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { name } }-form-{ { field|field_type } } { { name } }-field&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.name } }-form-label&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.id_for_label } }&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{ { field } }{ { field.label } } { { field.help_text } }&lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.name } }-form-errors&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{ { field.errors } }&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;That isn’t readable. And it’s used &lt;em&gt;everywhere&lt;/em&gt; on the website. If it weren’t
-for all the snippets of jQuery/3rd party libs littered throughout all the templates, this wouldn’t be
-so much of a problem to fix. But snagging out a single class name breaks crucial features.&lt;/p&gt;
-
-&lt;p&gt;There’s gotta be a better way. Definitely made me appreciate React and Ember a whole lot
-more.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://wismer.github.io/2015/08/01/components-the-silent-killer.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/2015/08/01/components-the-silent-killer.html</guid>
-        
-        <category>jquery</category>
-        
-        <category>forms</category>
-        
-        <category>react</category>
-        
-        <category>component</category>
         
         
       </item>
