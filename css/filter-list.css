@@ -1,0 +1,21 @@
+.city-name {
+  color: #222; }
+  .city-name .active {
+    color: #3875D7; }
+
+.filter-list {
+  height: 300px; }
+
+.highlight-enter {
+  opacity: 0.01; }
+
+.highlight-enter.highlight-enter-active {
+  opacity: 1;
+  transition: opacity .5s ease-in; }
+
+.highlight-leave {
+  opacity: 1; }
+
+.highlight-leave.highlight-leave-active {
+  opacity: 0.01;
+  transition: opacity .5s ease-in; }
