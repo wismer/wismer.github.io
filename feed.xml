@@ -4,9 +4,153 @@
     <title>All Things in Good Time</title>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 08 Sep 2015 00:54:20 -0400</pubDate>
-    <lastBuildDate>Tue, 08 Sep 2015 00:54:20 -0400</lastBuildDate>
+    <pubDate>Sat, 17 Oct 2015 13:43:44 -0400</pubDate>
+    <lastBuildDate>Sat, 17 Oct 2015 13:43:44 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Show Off Your Failures</title>
+        <description>&lt;p&gt;I had &lt;strike&gt;a good plan&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;I had &lt;strike&gt;a plan&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;I had &lt;strike&gt;an idea&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;I had &lt;strike&gt;something&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, I had nothing.&lt;/p&gt;
+
+&lt;p&gt;Originally I was going to do something way overly ambitious - write about learning
+Rust over 100 days. Did that work out? It did for the first two weeks but I started
+to run into a wall that I couldn’t get myself over. That borrow-checker gives me nightmares.&lt;/p&gt;
+
+&lt;p&gt;It reminds me over all my half-finished projects I’ve tinkered with, all with
+varying degrees of determination and seriousness. Since I’ll probably never finish,
+I’d be remiss if I didn’t at least talk about &lt;em&gt;why&lt;/em&gt; I gave up on them.&lt;/p&gt;
+
+&lt;h4 id=&quot;unsubberhttpsgithubcomwismerunsubber&quot;&gt;&lt;a href=&quot;https://github.com/wismer/unsubber&quot;&gt;unsubber&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A Recurse Center project that connects with
+gmail. It was to grep through emails looking for unsubscribe links and then submit
+unsubscribe requests. Didn’t work - not all unsubscribe pages are made equal. &lt;strong&gt;Failure Grade: B-&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;git-addhttpsgithubcomwismergit-add&quot;&gt;&lt;a href=&quot;https://github.com/wismer/git-add&quot;&gt;git-add&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A recent project that was pretty half-hearted from the get-go. I use the &lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt; text editor
+at work and at home and wanted an easier way to grab blocks of code and with a shortcut, append a commit message (and git add, git push, etc) without having to use the terminal. The API for the editor is confusing, and written entirely in CoffeeScript - something I am not used to (and not particularly fond of). I didn’t get very far with this. &lt;strong&gt;Failure Grade: Lackluster&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;caesar-cipherhttpsgithubcomwismercaesar-cipher&quot;&gt;&lt;a href=&quot;https://github.com/wismer/caesar-cipher&quot;&gt;caesar-cipher&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Technically, this is &lt;em&gt;complete&lt;/em&gt;, but there’s a whole lot more I could do with this but I just couldn’t
+find myself interested enough in it to continue. It encrypts and decrypts strings into and out of the Caesar Cryptograph method (I’m a big fan of non-complex crpyto and/or Roman History) &lt;strong&gt;Failure Grade: Not Useful&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;simple-api-serverhttpsgithubcomwismersimple-api-server&quot;&gt;&lt;a href=&quot;https://github.com/wismer/simple-api-server&quot;&gt;simple-api-server&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;This one was infuriating. An Ember front-end, Rust backend, it was supposed to serve
+json data of a card game that I play, but I had so much trouble setting the headers correctly
+in rust that I ultimately gave up on it. &lt;strong&gt;Failure Grade: Spectacular&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;one-hundred-days-of-rusthttpsgithubcomwismerone-hundred-days-of-rust&quot;&gt;&lt;a href=&quot;https://github.com/wismer/one-hundred-days-of-rust&quot;&gt;one-hundred-days-of-rust&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Haha. So bad. &lt;strong&gt;Failure Grade: Gold Star for Effort&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;proxy-boxyhttpsgithubcomwismerproxy-boxy&quot;&gt;&lt;a href=&quot;https://github.com/wismer/proxy-boxy&quot;&gt;proxy-boxy&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;When I was too stubborn to learn how to use Jekyll, I tried to make my own blog. It was
+very, &lt;em&gt;very&lt;/em&gt; ugly. I even had a fellow RC friend tell me that it was so bad it was funny (he meant well) &lt;strong&gt;Failure Grade: Good god, this is really ugly&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;react-syntax-highlighterhttpsgistgithubcomwismerc6108b5d3d08496353d0&quot;&gt;&lt;a href=&quot;https://gist.github.com/wismer/c6108b5d3d08496353d0&quot;&gt;react-syntax-highlighter&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;I was too frustrated with the syntax highlighters for Jekyll not working right with Rust that
+I attempted to write my own in React. So, I essentially doubled the amount of work I intended to do. The intention was to
+highlight how the stack and the heap is used in Rust but I couldn’t think of a good example to follow through with. &lt;strong&gt;Failure Grade: Neat Idea, too bad it sucks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve got many more failed projects/posts but I didn’t want to spend too much time writing them up
+or else this post would have met the same demise as those listed above.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I failed. Frequently. Sometimes I gave up because there was a voice in my head
+telling me that I was stupid and that I should feel bad for my shoddy work, sometimes I just get distracted by
+something else.&lt;/p&gt;
+
+&lt;p&gt;But that’s ok.&lt;/p&gt;
+
+&lt;p&gt;I’m still curious and will always continue to be.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Oct 2015 09:34:26 -0400</pubDate>
+        <link>http://wismer.github.io/2015/10/15/show-off-your-failures.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/10/15/show-off-your-failures.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Thing</title>
+        <description>&lt;div id=&quot;form-val&quot;&gt;&lt;/div&gt;
+
+&lt;script src=&quot;/javascript/form-val/build/form-val.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 24 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/09/24/some-stupid-title.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/09/24/some-stupid-title.html</guid>
+        
+        <category>rust</category>
+        
+        <category>lifetimes</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Missing Out</title>
+        <description>&lt;style&gt;
+  pre {
+    color: #ABAE9E;
+    background-color: #282C34;
+    font-size: 0.6em;
+  }
+
+  .let-bind {
+    color: #C178DD;
+  }
+
+  .integer-binding {
+    color: #D19657;
+  }
+
+  .string {
+    color: #91C379;
+  }
+
+  .func-name {
+    color: #56A6EF;
+  }
+
+  .t-head {
+    text-align: center;
+  }
+
+  .code-line:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .code-func {
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div id=&quot;example-right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;/javascript/lifetimes/build/lifetimes.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 12 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/09/12/missing-out.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/09/12/missing-out.html</guid>
+        
+        <category>rust</category>
+        
+        <category>lifetimes</category>
+        
+        
+      </item>
     
       <item>
         <title>Components - The Silent Killer?</title>
@@ -467,208 +611,6 @@ every ~50ms. It’s nice to see it work - I wanted to mimick the decibel meter t
         <pubDate>Mon, 26 Jan 2015 00:00:00 -0500</pubDate>
         <link>http://wismer.github.io/2015/01/26/sounds.html</link>
         <guid isPermaLink="true">http://wismer.github.io/2015/01/26/sounds.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Enforcing Types in Ruby</title>
-        <description>&lt;p&gt;Ruby is and will always be a favorite language of mine. It was also my first, and when I was learning on my own before &lt;a href=&quot;https://www.hackerschool.com&quot;&gt;Hacker School&lt;/a&gt;, I was constantly plagued with &lt;code&gt;RuntimeError&lt;/code&gt; messages in my terminal - usually the bug was me mixing up types - expecting one thing to be an Array and instead having it become a Fixnum.&lt;/p&gt;
-
-&lt;p&gt;Since then, I’ve been lucky enough to have been exposed to “typed” programming languages. &lt;a href=&quot;http://rust-lang.org&quot;&gt;Rust&lt;/a&gt; was the first language I tried experimenting with and it was incredibly difficult to adhere to the compiler rules on setting types correctly - I simply was too used to the permissiveness of Ruby.&lt;/p&gt;
-
-&lt;p&gt;So, what if it were possible to enforce types/type signatures in ruby class methods? I initially tried to write it out like this by treating the “types” as default arguments, and then find a way to change how Ruby normally handles methods.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Fixnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Fixnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Fixnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Unfortunately, this way can’t work. There is a &lt;code&gt;Method&lt;/code&gt; class in Ruby’s core libraries, but there’s little one can do with a method implicitly. Instead, I’ll have to emulate the “type signatures” that are often found in languages like Haskell.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://blog.codeclimate.com/blog/2014/05/06/gradual-type-checking-for-ruby/&quot;&gt;Code Climate wrote up something called ‘gradual typing’&lt;/a&gt; and in it, type signatures are used as a class method. How they were used, I could not say. So I went about making a rudimentary version of it - signatures go below the methods, types are set as default &lt;em&gt;keyword&lt;/em&gt; arguments. The method gets called, copies the method it’s related to, binds it to the class and THEN redefines it with typechecking inserted. If it passes, the original method gets called. If not, an error is raised.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TypeSet&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;typesafe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{})&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;original_method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance_method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;meth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:define_method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passed_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;all?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;passed_args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;original_method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passed_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;exceptions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;passed_args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Expected &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, got &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passed_args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;. &amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exceptions&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SomeClass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TypeSet&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create_array_of_letters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;arg1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;arg2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arg2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;typesafe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:create_array_of_letters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;arg1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;arg2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Fixnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalize&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;typesafe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;names&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Of course, there are a lot of problems with this approach. Re-binding the method is tricky, and so there can be a lot of limitations towards using this. Still, as much as I love ruby and the flexibility it offers, I do find myself becoming more interested in strict-typing. It helps to keep track what my methods are doing.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Jan 2015 00:00:00 -0500</pubDate>
-        <link>http://wismer.github.io/2015/01/23/enforcing-types.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/2015/01/23/enforcing-types.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Game of Life</title>
-        <description>&lt;script src=&quot;/javascript/tabbing.js&quot;&gt;&lt;/script&gt;
-
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/tabbing.css&quot; /&gt;
-
-&lt;p&gt;Last April, a fellow batch-mate of mine from Hacker School
-did a presentation by rendering &lt;a href=&quot;http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&quot;&gt;Conway’s Game of Life&lt;/a&gt;
-in html. It was a memorable presentation; Game of Life I never heard of before,
-but more importantly, it was my first introduction to React.js. All the underpinnings of it,
-like how html fragments are broken up and abstracted out into XML-like “components” and
-how it works in the browser was foreign to me, but I at least was able to comprehend
-that React can be &lt;em&gt;fast&lt;/em&gt;. The cells flashed off and on quickly with no hiccups.
-A jQuery rendering (also shown) was noticeably slower.&lt;/p&gt;
-
-&lt;p&gt;So anyway, fast-forward to today - I gave replicating this project a try (the React part, at least).
-Surprisingly, it wasn’t terribly difficult to implement. Three components -&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code&gt;&amp;lt;CellTable&amp;gt;&lt;/code&gt; - handles the state of the board/call stack.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;&amp;lt;CellRow&amp;gt;&lt;/code&gt; - holds the cells&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;&amp;lt;Cell&amp;gt;&lt;/code&gt; - The cell itself - no state, but does respond to an &lt;code&gt;onClick&lt;/code&gt; event
-that triggers a cell “culture” to form.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Outside functions determine what the new state would be, and that’s all there was to it.&lt;/p&gt;
-
-&lt;p&gt;A lot of fun to do!&lt;/p&gt;
-
-&lt;p&gt;Click Me!&lt;/p&gt;
-
-&lt;div id=&quot;tab&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-  renderTab();
-&lt;/script&gt;
-
-</description>
-        <pubDate>Mon, 05 Jan 2015 00:00:00 -0500</pubDate>
-        <link>http://wismer.github.io/2015/01/05/navigating-divs-without-tabbing.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/2015/01/05/navigating-divs-without-tabbing.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Special Words</title>
-        <description>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/list.css&quot; /&gt;
-
-&lt;script src=&quot;/javascript/react-with-addons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script src=&quot;/javascript/sudoku-board.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;React is all about encouraging the &lt;a href=&quot;http://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html&quot;&gt;‘statelessness’ of React components&lt;/a&gt;. It makes for more straightforward code and makes it easier to track down problems. I wanted to explore this side of React more as my previous experiments have relied heavily on state, so I ended up settling on an interactive Sudoku game (this makes for a great &lt;a href=&quot;https://www.hackerschool.com&quot;&gt;hacker school&lt;/a&gt; project &lt;em&gt;wink&lt;/em&gt; &lt;em&gt;wink&lt;/em&gt;). Breaking down the game into React components was a pretty straightforward process:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;&amp;lt;SudokuBoard&amp;gt;&lt;/code&gt; - a 3x3 grid of 9 segments (81 cells) and a collapsable “number pad”. All of the transitive data goes here as state properties and each “cell” or element in the array of arrays are objects with certain properties (ex. if the cell is editable, the number it has or is actively selected). It also holds onto the object that pertains to an active cell.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;&amp;lt;Segment&amp;gt;&lt;/code&gt; - a 3x3 grid of 9 cells. This merely passes on &lt;code&gt;SudokuBoard&lt;/code&gt;’s functions to the individual cells and their respective properties. It does nothing else.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;&amp;lt;Cell&amp;gt;&lt;/code&gt; - Contains an integer that the user may/may not input. User events (&lt;code&gt;onKeyDown&lt;/code&gt;, &lt;code&gt;onClick&lt;/code&gt;) are triggered here. Click on a square it renders it active (so long as it’s editable). Type a number to fill the cell or use the delete/backspace key to remove.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Below are the functions that &lt;code&gt;SudokuBoard&lt;/code&gt; uses to pass down to each cell. Control of the board is centered on these two functions:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;handleNumberSelect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// this handles the onKeyPress event;&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// a digit is permitted, as is backspace (for deletion).&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;isNaN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// an invalid entry - a non-number, non-backspace key press.&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// an outside function that checks to see if&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// the move is a valid one by examining the board.&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cellChecker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// two of the above conditionals force a change on the board,&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// and so setState reflects that.&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;makeCellActive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// this relates to the onClick event,&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// and simply highlights a cell that is editable&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// (default numbers are not editable, as that would be cheating!)&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prevCell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;activeCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prevCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isActive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;prevCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isActive&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prevCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prevCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prevCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;activeCell&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;activeCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isActive&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;activeCell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// as before, the board is altered somewhat,&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// and so setState forces it to re-render to reflect the change.&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;board&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;activeCell&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;activeCell&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Here’s the render function for &lt;code&gt;Cell&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;backgroundColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isActive&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#b4cdcd&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#bbbbbb&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;makeCellActive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;game-cell&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;cell-placeholder&amp;#39;&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;onKeyDown&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;selectNumber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/input&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Anyway, this was a lot of fun to do. Major props to Will Sommers for helping me out with this.&lt;/p&gt;
-
-&lt;div id=&quot;game&quot;&gt;&lt;/div&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-  renderTab();
-&lt;/script&gt;
-
-</description>
-        <pubDate>Mon, 22 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://wismer.github.io/2014/12/22/special-words.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/2014/12/22/special-words.html</guid>
         
         
       </item>
