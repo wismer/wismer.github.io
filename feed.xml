@@ -4,9 +4,97 @@
     <title>All Things in Good Time</title>
     <link>http://wismer.github.io/</link>
     <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 17 Oct 2015 13:43:44 -0400</pubDate>
-    <lastBuildDate>Sat, 17 Oct 2015 13:43:44 -0400</lastBuildDate>
+    <pubDate>Sun, 08 Nov 2015 19:26:49 -0500</pubDate>
+    <lastBuildDate>Sun, 08 Nov 2015 19:26:49 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>A Cathartic Experience</title>
+        <description>&lt;p&gt;This isn’t about programming, today.&lt;/p&gt;
+
+&lt;p&gt;This is about grief, depression, and surprises in life that can make depression tolerable.&lt;/p&gt;
+
+&lt;p&gt;Yesterday, I drifted around Manhattan - shambling from block to block with a profound
+sadness perched upon on my shoulder. It would nibble at my ear with its terrible beak,
+its claws digging painfully into me.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;you’re a schmuck; a buffoon and everyone knows it - you’ll never love again&lt;/em&gt;”, it whispers.
+“&lt;em&gt;you’ll die sad and alone&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;p&gt;Listless, I was walking out of a Duane Reade and saw on the welcome mat a torn piece of paper.
+At first I thought it was a receipt someone dropped, but the lettering on it I recognized.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;p&gt;
+      &quot;Is that yours?&quot; A stranger asked me, pointing at the parchment; its edges brimming with age.
+    &lt;/p&gt;
+
+    &lt;p&gt;No, I said.&lt;/p&gt;
+
+    &lt;p&gt;&quot;But you recognize it, don&#39;t you? He wrote &#39;The Prophet&#39;.&quot;&lt;/p&gt;
+
+    &lt;p&gt;&quot;Yea.&quot;&lt;/p&gt;
+
+    &lt;p&gt;&quot;A good book.&quot;&lt;/p&gt;
+
+    &lt;p&gt;&quot;A &lt;em&gt;great&lt;/em&gt; book.&quot;&lt;/p&gt;
+
+    &lt;p&gt;we smile knowingly, and say goodbye to each other.&lt;/p&gt;
+
+    &lt;p&gt;I am walking again and Khalil whispers into my ear:&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;img src=&quot;/images/book.jpg&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;br /&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      Your joy is your sorrow unmasked.
+      And the selfsame well from which your laughter rises was oftentimes filled with your tears.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      And how else can it be?
+      The deeper that sorrow carves into your being, the more joy you can contain.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Is not the cup that holds your wine the very cup that was burned in the potter&#39;s oven?
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      And is not the lute that soothes your spirit, the very wood that was hollowed with knives?
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      When you are joyous, look deep into your heart and you shall find it is only that which has given you sorrow that is giving you joy.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;strong&gt;When you are sorrowful look again in your heart, and you shall see that in truth you are weeping for that which has been your delight.
+      Some of you say, &quot;Joy is greater than sorrow,&quot; and others say, &quot;Nay, sorrow is the greater.&quot;
+      But I say unto you, they are inseparable.&lt;/strong&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Together they come, and when one sits, alone with you at your board, remember that the other is asleep upon your bed.
+      Verily you are suspended like scales between your sorrow and your joy.
+      Only when you are empty are you at standstill and balanced.
+      When the treasure-keeper lifts you to weigh his gold and his silver, needs must your joy or your sorrow rise or fall.
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 08 Nov 2015 08:34:26 -0500</pubDate>
+        <link>http://wismer.github.io/2015/11/08/a-cathartic-experience.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/11/08/a-cathartic-experience.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Show Off Your Failures</title>
@@ -593,24 +681,6 @@ The reason for this is twofold:&lt;/p&gt;
         <category>event-driven,</category>
         
         <category>ruby</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>React Sound</title>
-        <description>&lt;audio src=&quot;/external/test.ogg&quot; controls=&quot;&quot;&gt;&lt;/audio&gt;
-
-&lt;p&gt;Not much in this post, but thankfully I was able to figure out the audio API for gathering data. React here is updating 
-every ~50ms. It’s nice to see it work - I wanted to mimick the decibel meter that I got so used to seeing back in the day with WinAmp.&lt;/p&gt;
-
-&lt;script src=&quot;/javascript/sound.js&quot;&gt;&lt;/script&gt;
-
-&lt;div style=&quot;height: 200px;&quot; id=&quot;analyser&quot;&gt;&lt;/div&gt;
-</description>
-        <pubDate>Mon, 26 Jan 2015 00:00:00 -0500</pubDate>
-        <link>http://wismer.github.io/2015/01/26/sounds.html</link>
-        <guid isPermaLink="true">http://wismer.github.io/2015/01/26/sounds.html</guid>
         
         
       </item>
