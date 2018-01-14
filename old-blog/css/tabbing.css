@@ -1,0 +1,16 @@
+.cell-row {
+  float: left; }
+
+.cell {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0px;
+  text-align: center;
+  z-index: 1; }
+
+.holder {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  z-index: 0; }

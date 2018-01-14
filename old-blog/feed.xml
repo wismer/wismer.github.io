@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>All Things in Good Time</title>
+    <link>http://wismer.github.io/</link>
+    <atom:link href="http://wismer.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 08 Nov 2015 19:26:49 -0500</pubDate>
+    <lastBuildDate>Sun, 08 Nov 2015 19:26:49 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>A Cathartic Experience</title>
+        <description>&lt;p&gt;This isn’t about programming, today.&lt;/p&gt;
+
+&lt;p&gt;This is about grief, depression, and surprises in life that can make depression tolerable.&lt;/p&gt;
+
+&lt;p&gt;Yesterday, I drifted around Manhattan - shambling from block to block with a profound
+sadness perched upon on my shoulder. It would nibble at my ear with its terrible beak,
+its claws digging painfully into me.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;you’re a schmuck; a buffoon and everyone knows it - you’ll never love again&lt;/em&gt;”, it whispers.
+“&lt;em&gt;you’ll die sad and alone&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;p&gt;Listless, I was walking out of a Duane Reade and saw on the welcome mat a torn piece of paper.
+At first I thought it was a receipt someone dropped, but the lettering on it I recognized.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;p&gt;
+      &quot;Is that yours?&quot; A stranger asked me, pointing at the parchment; its edges brimming with age.
+    &lt;/p&gt;
+
+    &lt;p&gt;No, I said.&lt;/p&gt;
+
+    &lt;p&gt;&quot;But you recognize it, don&#39;t you? He wrote &#39;The Prophet&#39;.&quot;&lt;/p&gt;
+
+    &lt;p&gt;&quot;Yea.&quot;&lt;/p&gt;
+
+    &lt;p&gt;&quot;A good book.&quot;&lt;/p&gt;
+
+    &lt;p&gt;&quot;A &lt;em&gt;great&lt;/em&gt; book.&quot;&lt;/p&gt;
+
+    &lt;p&gt;we smile knowingly, and say goodbye to each other.&lt;/p&gt;
+
+    &lt;p&gt;I am walking again and Khalil whispers into my ear:&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;
+    &lt;img src=&quot;/images/book.jpg&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;br /&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      Your joy is your sorrow unmasked.
+      And the selfsame well from which your laughter rises was oftentimes filled with your tears.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      And how else can it be?
+      The deeper that sorrow carves into your being, the more joy you can contain.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Is not the cup that holds your wine the very cup that was burned in the potter&#39;s oven?
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      And is not the lute that soothes your spirit, the very wood that was hollowed with knives?
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      When you are joyous, look deep into your heart and you shall find it is only that which has given you sorrow that is giving you joy.
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;strong&gt;When you are sorrowful look again in your heart, and you shall see that in truth you are weeping for that which has been your delight.
+      Some of you say, &quot;Joy is greater than sorrow,&quot; and others say, &quot;Nay, sorrow is the greater.&quot;
+      But I say unto you, they are inseparable.&lt;/strong&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Together they come, and when one sits, alone with you at your board, remember that the other is asleep upon your bed.
+      Verily you are suspended like scales between your sorrow and your joy.
+      Only when you are empty are you at standstill and balanced.
+      When the treasure-keeper lifts you to weigh his gold and his silver, needs must your joy or your sorrow rise or fall.
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 08 Nov 2015 08:34:26 -0500</pubDate>
+        <link>http://wismer.github.io/2015/11/08/a-cathartic-experience.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/11/08/a-cathartic-experience.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Show Off Your Failures</title>
+        <description>&lt;p&gt;I had &lt;strike&gt;a good plan&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;I had &lt;strike&gt;a plan&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;I had &lt;strike&gt;an idea&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;I had &lt;strike&gt;something&lt;/strike&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, I had nothing.&lt;/p&gt;
+
+&lt;p&gt;Originally I was going to do something way overly ambitious - write about learning
+Rust over 100 days. Did that work out? It did for the first two weeks but I started
+to run into a wall that I couldn’t get myself over. That borrow-checker gives me nightmares.&lt;/p&gt;
+
+&lt;p&gt;It reminds me over all my half-finished projects I’ve tinkered with, all with
+varying degrees of determination and seriousness. Since I’ll probably never finish,
+I’d be remiss if I didn’t at least talk about &lt;em&gt;why&lt;/em&gt; I gave up on them.&lt;/p&gt;
+
+&lt;h4 id=&quot;unsubberhttpsgithubcomwismerunsubber&quot;&gt;&lt;a href=&quot;https://github.com/wismer/unsubber&quot;&gt;unsubber&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A Recurse Center project that connects with
+gmail. It was to grep through emails looking for unsubscribe links and then submit
+unsubscribe requests. Didn’t work - not all unsubscribe pages are made equal. &lt;strong&gt;Failure Grade: B-&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;git-addhttpsgithubcomwismergit-add&quot;&gt;&lt;a href=&quot;https://github.com/wismer/git-add&quot;&gt;git-add&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A recent project that was pretty half-hearted from the get-go. I use the &lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt; text editor
+at work and at home and wanted an easier way to grab blocks of code and with a shortcut, append a commit message (and git add, git push, etc) without having to use the terminal. The API for the editor is confusing, and written entirely in CoffeeScript - something I am not used to (and not particularly fond of). I didn’t get very far with this. &lt;strong&gt;Failure Grade: Lackluster&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;caesar-cipherhttpsgithubcomwismercaesar-cipher&quot;&gt;&lt;a href=&quot;https://github.com/wismer/caesar-cipher&quot;&gt;caesar-cipher&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Technically, this is &lt;em&gt;complete&lt;/em&gt;, but there’s a whole lot more I could do with this but I just couldn’t
+find myself interested enough in it to continue. It encrypts and decrypts strings into and out of the Caesar Cryptograph method (I’m a big fan of non-complex crpyto and/or Roman History) &lt;strong&gt;Failure Grade: Not Useful&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;simple-api-serverhttpsgithubcomwismersimple-api-server&quot;&gt;&lt;a href=&quot;https://github.com/wismer/simple-api-server&quot;&gt;simple-api-server&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;This one was infuriating. An Ember front-end, Rust backend, it was supposed to serve
+json data of a card game that I play, but I had so much trouble setting the headers correctly
+in rust that I ultimately gave up on it. &lt;strong&gt;Failure Grade: Spectacular&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;one-hundred-days-of-rusthttpsgithubcomwismerone-hundred-days-of-rust&quot;&gt;&lt;a href=&quot;https://github.com/wismer/one-hundred-days-of-rust&quot;&gt;one-hundred-days-of-rust&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Haha. So bad. &lt;strong&gt;Failure Grade: Gold Star for Effort&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;proxy-boxyhttpsgithubcomwismerproxy-boxy&quot;&gt;&lt;a href=&quot;https://github.com/wismer/proxy-boxy&quot;&gt;proxy-boxy&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;When I was too stubborn to learn how to use Jekyll, I tried to make my own blog. It was
+very, &lt;em&gt;very&lt;/em&gt; ugly. I even had a fellow RC friend tell me that it was so bad it was funny (he meant well) &lt;strong&gt;Failure Grade: Good god, this is really ugly&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;react-syntax-highlighterhttpsgistgithubcomwismerc6108b5d3d08496353d0&quot;&gt;&lt;a href=&quot;https://gist.github.com/wismer/c6108b5d3d08496353d0&quot;&gt;react-syntax-highlighter&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;I was too frustrated with the syntax highlighters for Jekyll not working right with Rust that
+I attempted to write my own in React. So, I essentially doubled the amount of work I intended to do. The intention was to
+highlight how the stack and the heap is used in Rust but I couldn’t think of a good example to follow through with. &lt;strong&gt;Failure Grade: Neat Idea, too bad it sucks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve got many more failed projects/posts but I didn’t want to spend too much time writing them up
+or else this post would have met the same demise as those listed above.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I failed. Frequently. Sometimes I gave up because there was a voice in my head
+telling me that I was stupid and that I should feel bad for my shoddy work, sometimes I just get distracted by
+something else.&lt;/p&gt;
+
+&lt;p&gt;But that’s ok.&lt;/p&gt;
+
+&lt;p&gt;I’m still curious and will always continue to be.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Oct 2015 09:34:26 -0400</pubDate>
+        <link>http://wismer.github.io/2015/10/15/show-off-your-failures.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/10/15/show-off-your-failures.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Thing</title>
+        <description>&lt;div id=&quot;form-val&quot;&gt;&lt;/div&gt;
+
+&lt;script src=&quot;/javascript/form-val/build/form-val.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Thu, 24 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/09/24/some-stupid-title.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/09/24/some-stupid-title.html</guid>
+        
+        <category>rust</category>
+        
+        <category>lifetimes</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Missing Out</title>
+        <description>&lt;style&gt;
+  pre {
+    color: #ABAE9E;
+    background-color: #282C34;
+    font-size: 0.6em;
+  }
+
+  .let-bind {
+    color: #C178DD;
+  }
+
+  .integer-binding {
+    color: #D19657;
+  }
+
+  .string {
+    color: #91C379;
+  }
+
+  .func-name {
+    color: #56A6EF;
+  }
+
+  .t-head {
+    text-align: center;
+  }
+
+  .code-line:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .code-func {
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div id=&quot;example-right&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;/javascript/lifetimes/build/lifetimes.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 12 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/09/12/missing-out.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/09/12/missing-out.html</guid>
+        
+        <category>rust</category>
+        
+        <category>lifetimes</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Components - The Silent Killer?</title>
+        <description>&lt;style&gt;
+  pre {
+    font-size: 10px;
+  }
+&lt;/style&gt;
+
+&lt;p&gt;Hi! I’m Troy McClure. You might remember me from such stirring blog posts as: &lt;i&gt;Computers are Great! But Do They Work?”&lt;/i&gt; and
+&lt;i&gt;“The Coffee Shop of Horrors: The Case of the Broken WiFi”&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s easy to get opinionated about certain things. The past few weeks for me was certainly no exception.&lt;/p&gt;
+
+&lt;p&gt;I really like the idea behind components in templates, and the way they can be reused in other parts
+of a website. But sometimes over-reliance on it, particularly if naming conventions are not followed
+(i.e. &lt;code&gt;base_field.html&lt;/code&gt; being a component of a component of a component isn’t terribly intuitive - &lt;em&gt;see below&lt;/em&gt;),
+then there will be &lt;del&gt;blood&lt;/del&gt; problems.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- basic_field.html --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { name } }-form-{ { field|field_type } } { { name } }-field&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.name } }-form-label&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.id_for_label } }&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{ { field } }{ { field.label } } { { field.help_text } }&lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{ { field.name } }-form-errors&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{ { field.errors } }&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That isn’t readable. And it’s used &lt;em&gt;everywhere&lt;/em&gt; on the website. If it weren’t
+for all the snippets of jQuery/3rd party libs littered throughout all the templates, this wouldn’t be
+so much of a problem to fix. But snagging out a single class name breaks crucial features.&lt;/p&gt;
+
+&lt;p&gt;There’s gotta be a better way. Definitely made me appreciate React and Ember a whole lot
+more.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/09/09/components-the-silent-killer.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/09/09/components-the-silent-killer.html</guid>
+        
+        <category>jquery</category>
+        
+        <category>forms</category>
+        
+        <category>react</category>
+        
+        <category>component</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Variables They Are (not) A Changin&#39;</title>
+        <description>&lt;style&gt;
+code {
+  font-size: 12px;
+}
+&lt;/style&gt;
+
+&lt;p&gt;Every time I start trying out something new in rust, I run into compiler errors
+complaining to me about things like mis-matched types, ‘cannot borrow variable’,
+etc. I go back to the chapters about “ownership” and “borrowing”
+(found in &lt;a href=&quot;https://doc.rust-lang.org/stable/book&quot;&gt;the rust book&lt;/a&gt;), read a little bit,
+then feel foolhardy enough to take another stab at it.&lt;/p&gt;
+
+&lt;p&gt;I feel like this is something foundational about the language and since I don’t yet
+have a full understanding of it, any &lt;em&gt;other&lt;/em&gt; part that I try to hack away
+at will be fraught with compiler errors. I’m not sure what I am missing.&lt;/p&gt;
+
+&lt;p&gt;To work this out better in my head, I’ll try imagining that I’m at a library looking
+for a book to borrow. There are three libraries accessible to me. One of them
+has the book “A Storm of Swords” that I want to read.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_in_queens&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Metaprogramming Ruby&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Ancillary Justice&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;The Great Gatsby&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_in_manhattan&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SICP&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;The Little Schemer&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Linear Algebra&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_in_bronx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;A Storm of Swords&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;The Silmarrion&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I have a function called &lt;code&gt;library_has_book&lt;/code&gt; which takes a vector (of book titles),
+the book that I want, and, after iterating through the collection, returns a boolean value.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;A Storm of Swords&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// still not sure why I have to do this.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library_in_queens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// borrow the book&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Compiles. No problems.&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library_in_manhattan&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// error: use of moved value: `book`&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;After using the book variable binding, I couldn’t use the binding itself again
+anywhere else. That seems like a maddening thing to keep track of but apparently I’ve been
+using a solution already - just not in the right place.&lt;/p&gt;
+
+&lt;p&gt;in &lt;code&gt;library_has_book&lt;/code&gt;, the arguments contain ampersands (&lt;code&gt;&amp;amp;&lt;/code&gt;). I’m not sure how strings are handled yet,
+as I see &lt;code&gt;&amp;amp;str&lt;/code&gt; used quite a bit, but the &lt;code&gt;Vec&amp;lt;&amp;amp;str&amp;gt;&lt;/code&gt; clued me in to what’s going on. The ampersands represent
+&lt;em&gt;references&lt;/em&gt; to the bindings that you pass in, and not the value itself. When the code gets executed,
+rust takes the references provided and goes to their location in memory, and then pulls the data from
+there while keeping the original binding intact.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;library_has_book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library_in_queens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;book&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// `book` keeps it&amp;#39;s original meaning and place, and only provides a reference to it&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now &lt;code&gt;book&lt;/code&gt; can be used as much as needed, so long as the references are being made to it.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/08/01/ownership-and-you.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/08/01/ownership-and-you.html</guid>
+        
+        <category>rust,</category>
+        
+        <category>bindings</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>(a little bit) On the Variable Bindings of Rust</title>
+        <description>&lt;p&gt;All right, sportsfans. Let’s talk about the variables of Rust!&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// ok, pretty straightforward. `number` means the number 10.&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a_mutable_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// `mut` is short for `mutable`; this means it can change.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// `a_mutable_number` is 10 now, but might not be 10 later.&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typed_number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;i32&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// a bit weird. i32 is a number type (32 bit number).&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// `typed_number` is a specific kind of number.&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// They wear a jersey with a signed 32 on it and play for the integer team.&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reference_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a_mutable_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// weirder. `mut` swapped locations and married an ampersand. Why?&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Maybe it&amp;#39;s time I start playing around with them.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, let’s start with the boring &lt;code&gt;let number = 10&lt;/code&gt; and do stuff to it.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// outputs 10&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// outputs 11&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// from the compiler: &amp;quot;error: re-assignment of immutable variable `number`&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;First two examples are straightforward. Incrementing the number is technically
+redefining it, which prompts the compiler to complain about trying to change something
+that’s technically immutable. If I can’t change this, can I change &lt;code&gt;a_mutable_number&lt;/code&gt;?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;n&quot;&gt;a_mutable_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a_mutable_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 11! SUCCESS!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I can. Sweet. Now what about the &lt;code&gt;typed_number&lt;/code&gt;?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typed_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 11, cool.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{}&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typed_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Another error. Something about types.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If I give it mutability, can I change the type?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typed_number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;i32&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;typed_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error. Again, about the types! Always with the types!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Looks like I can’t. And as for that last variable binding example from back up top?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reference_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// error. cannot borrow `number` as immutable because it is also borrowed as mutable&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;another_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reference_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;mut&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;another_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// error: cannot borrow immutable local variable `another_number` as mutable&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Haha. What? I guess this is something I’ll have to revisit later on. With all these mentions about types I think that’s what I’ll dive into next.&lt;/p&gt;
+
+&lt;p&gt;Conclusion: &lt;img class=&quot;emoji&quot; title=&quot;:sweat_smile:&quot; alt=&quot;:sweat_smile:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f605.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; &lt;img class=&quot;emoji&quot; title=&quot;:loop:&quot; alt=&quot;:loop:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/27bf.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Jul 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/07/28/rust-variable-bindings.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/07/28/rust-variable-bindings.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>100 Days of Learning Rust</title>
+        <description>&lt;p&gt;Blogging about programming is tough. I often forget who that I am writing for and
+why. Eventually, I come back to the comfortable feeling and attitude that this blog is
+principally for myself, and myself only.&lt;/p&gt;
+
+&lt;p&gt;A friend from &lt;a href=&quot;http://recurse.com&quot;&gt;Recurse Center&lt;/a&gt;
+suggested to me that I start a dev diary while I work and grow as a nascent developer.
+It was a great idea, but I wasn’t sure what to write about. Should I do stuff about Ember.js, since
+that’s what I do most of my time at work? Or about Ruby, my first programming language?&lt;/p&gt;
+
+&lt;p&gt;Neither of these felt right. I want something fresh, something bizarre and incredibly difficult to learn.
+Something that has no immediate benefit that wouldn’t cloud my good intentions, but would at least
+expose me to some principles of computer science that I didn’t learn while earning my B.A. in Comparative Religions.&lt;/p&gt;
+
+&lt;p&gt;Rust was it. It has all the wrong (right) things for me.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Statically typed&lt;/li&gt;
+  &lt;li&gt;Strong Concurrency (My only exposure to concurrency was through experimenting with Ruby threads)&lt;/li&gt;
+  &lt;li&gt;Scary systems programming language&lt;/li&gt;
+  &lt;li&gt;No run-time environment (REPLs have been my primary vehicle for learning)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So I may not get to 100 days - let alone straight - of writing about my experiences in learning Rust
+but I’m really looking forward to the challenge.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Hello, World!&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;let’s do this&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Jul 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/07/27/one-hundred-days-of-rust.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/07/27/one-hundred-days-of-rust.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Nervous Writing</title>
+        <description>&lt;p&gt;Found my old notes that I made prior to my HS skype interviews on my desktop earlier this evening. It pains me to read it, but it also affords me some perspective. I’m very happy for the way things had turned out for me, all said and done.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ve had an interest in programming for a couple years, but I didn’t take it seriously until I started working at my new job.
+The reason for this is twofold:&lt;/p&gt;
+
+  &lt;p&gt;1.) The technical challenges at work were impossible to ignore&lt;/p&gt;
+
+  &lt;p&gt;2.) I second guess myself more than I should. Any idea I have as a project to work on as a means to learn gets shot down by the cynic in me or when I start running into complications. I kept putting myself down and comparing myself to the professionals I’ve met as an impossible standard.&lt;/p&gt;
+
+  &lt;p&gt;At first, the code I wrote to make data entry easier was more to avoid data entry than to learn, using whatever rudimentary understanding of Ruby that I had at the time.&lt;/p&gt;
+
+  &lt;p&gt;Over time, I became more comfortable with the language and expanded my collection of tools to include analysis of data and made me interested in how databases get structured.&lt;/p&gt;
+
+  &lt;p&gt;I want to go here because there’s only so much I can learn on my own. I fear that I will stop trying. I might have some great tools at work, but how useful will they be as time goes on? What if the data that allows my tools to be viable gets shut off? If I quit, how can I parlay these skills to a more meaningful (and tech-related) job?&lt;/p&gt;
+
+  &lt;p&gt;weaknesses: Everything?&lt;/p&gt;
+
+  &lt;p&gt;Being surronded by like-minded individuals, all wanting to be there, all people who are likely taking a large risk to quit their jobs in a down economy. All people who are all eager to learn and grow from it. as jsfd;gln ;sl&lt;/p&gt;
+
+  &lt;p&gt;questions to ask:&lt;/p&gt;
+
+  &lt;p&gt;Was there ever a project that a student wanted to do, that the staff did not think was good?&lt;/p&gt;
+
+  &lt;p&gt;What I have is this; a set of tools that parses data - but its for work!&lt;/p&gt;
+
+  &lt;p&gt;Do you find Hacker School to be a good sounding board for ideas? I trip over myself on thinking about “what would be useful”, and come to no conclusions. Whatever’s not broken, don’t fix it?&lt;/p&gt;
+
+  &lt;p&gt;This isn’t a community I am familiar with. There’s a certain youthful gusto that I don’t know what to make of it.&lt;/p&gt;
+
+  &lt;p&gt;I’m used to working with people older, sometimes much older, than me.&lt;/p&gt;
+
+  &lt;p&gt;What sort of ideas do students come up with at the school?&lt;/p&gt;
+
+  &lt;p&gt;I want to be here because it will be a school that I actually want to be attending.&lt;/p&gt;
+
+  &lt;p&gt;College was a cursory experience, and the one I chose was the one that seemed to have a student body closest to what I was comfortable with in HS (it wasn’t)&lt;/p&gt;
+
+  &lt;p&gt;My biggest worry is after the school. I’ve got a spotty resume so finding work is hard?&lt;/p&gt;
+
+  &lt;p&gt;My doubts in programming were firm up until I started working at my current job&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 12 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://wismer.github.io/2015/03/12/nervous-writing.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/03/12/nervous-writing.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Eventual Discovery</title>
+        <description>&lt;p&gt;Much like reading a book, sequential reading and writing of programming code has been my primary way of undestanding the subject matter. From top-down, I initialize some things, make some methods or functions that get called depending on certain parameters, and then execute; delivering whatever output that I so desire. Perhaps there might be a loop somewhere in there for data that isn’t reliable (like data over TCP), but generally this is how it goes.&lt;/p&gt;
+
+&lt;p&gt;Almost a year ago I wrote my BitTorrent client in Ruby in this particular way. Generally, it works like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A torrent file gets read, the data gets interpreted.&lt;/li&gt;
+  &lt;li&gt;Using the interpreted data, a connection is made to either an HTTP or UDP tracker url.&lt;/li&gt;
+  &lt;li&gt;On a &lt;em&gt;successful&lt;/em&gt; response, a list of Peer objects is constructed.&lt;/li&gt;
+  &lt;li&gt;With those peers, requests for connection are made over TCP.&lt;/li&gt;
+  &lt;li&gt;Regardless of connection status, a loop begins that either terminates when all peers refuse connection, or the file in question has been successfully downloaded. Below is the meat of my client program:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# this is an iteration over a list of *active* peers, whereupon each socket is checked&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# for any incoming data that utilize Ruby&amp;#39;s non-blocking IO&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;messager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty?&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;recv&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# more data gets downloaded&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# the buffer is a String object, and depending upon the 5th byte&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# (usually determines what message is), a choice is made.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# *probably* a KEEP_ALIVE message; basically the peer is acknowledging you, but isn&amp;#39;t&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# ready yet.&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;slice!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;KEEP_ALIVE&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HANDSHAKE&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# initial transmission of data from peer.&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parse_handshake&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BITFIELD&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# a description of what chunks of data they have concerning the file(s)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;bitfield&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each_with_index&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;blk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;send_interested&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty?&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HAVE&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# similar to bitfield, but much smaller&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bytesize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;recv&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# see this curried proc? It&amp;#39;s lame and confusing. But it works.&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;send_interested&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@buffer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty?&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;INTERESTED&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parse_interested&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PIECE&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# probably the most complicated part. Not all pieces are created equal.&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parse_piece&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CANCEL&lt;/span&gt;
+      &lt;span class=&quot;vi&quot;&gt;@socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;recv&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;KEEP_ALIVE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;TL;DR: Whatever is in the TCP pipeline gets interpreted and depending on several conditions, a method/function is called and the loop continues on with another connection. It’s a functional approach, but as the program grew more complex, this massive loop began causing me a lot of headaches. Pretty soon I was flipping between multiple files/ruby objects, trying to track down bugs, adding features and proceeding to rip my hair out.&lt;/p&gt;
+
+&lt;h3 id=&quot;theres-another-way-to-do-this&quot;&gt;There’s another way to do this.&lt;/h3&gt;
+
+&lt;p&gt;A bit of a tangent, but I love the web-app building rubygem &lt;a href=&quot;https://sinatrarb.com&quot;&gt;Sinatra&lt;/a&gt;. Got a GET request heading to your root address?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;/&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# render something!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As simple as this is, there’s a lot going on underneath that allows such a construction to work well and efficiently. Much of this has to do with writing a program that is &lt;strong&gt;event driven&lt;/strong&gt;. I don’t know what the underpinnings are for how Sinatra works, but I have a basic understanding of it. To illustrate how it works, I’ll implement this with my BitTorrent client.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-setup&quot;&gt;The Setup&lt;/h3&gt;
+
+&lt;p&gt;Principally, there are three Ruby objects that are in play, here:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;PeerSession - inherits methods and properties from TCPSocket, with some custom ones added in.&lt;/li&gt;
+  &lt;li&gt;PieceReactor - emits events depending on circumstances of whatever data that is coming from PeerSession objects&lt;/li&gt;
+  &lt;li&gt;PeerEvent - An object with callbacks, generated by PieceReactor&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PeerSession&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TCPSocket&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;attr_accessor&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:current_piece&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# bunch of code handling the connection, and interepreting the incoming bytes&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PieceReactor&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PeerEvent&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# I&amp;#39;ll cover PeerEvent in a moment&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:handshake&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# On a handshake response, execute this block!&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:interested&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# On an interested response, execute this block!&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# other &amp;quot;on X&amp;quot; events&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;connect&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# initializes PeerSession objects, @peers, that are passed on to #tick on a loop&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;tick&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@peers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;peer_write&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_messages&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:interested&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:have&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bitfield&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_piece&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:piece&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:handshake&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:handshake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:keep_alive&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:keep_alive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;peer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:wait&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;# do nothing&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;What is &lt;code&gt;on&lt;/code&gt; and &lt;code&gt;emit&lt;/code&gt; doing? Where are they defined? Why am I extending &lt;code&gt;PeerEvent&lt;/code&gt; to &lt;code&gt;PieceReactor&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;So, &lt;code&gt;on&lt;/code&gt; is a &lt;code&gt;PeerEvent&lt;/code&gt; method. By itself, it does nothing - why?&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;callbacks&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@callbacks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;callbacks&lt;/code&gt; stands as a collection of proc objects. To fill the collection, you’d write out &lt;code&gt;on&lt;/code&gt; methods like the ones I mentioned above and save it as &lt;code&gt;proc&lt;/code&gt; objects waiting to be called.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;callbacks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blk&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;emit&lt;/code&gt; is the endpoint and the most crucial part - when something specific happens, reference that specific callback and call it, using the symbol representing it (the one that was used with &lt;code&gt;on&lt;/code&gt;) to access the proc in the collection and call it, passing any arguments that it requires.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;emit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;callbacks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The great advantage in this strategy isn’t speed, but for a programmer’s peace of mind - it is easier to compose and localize actions to occur in a specific location, and not have to create custom objects for every instance that could be strewn across multiple files. It feels cleaner, and easier to debug. Added to this, by extending the &lt;code&gt;PeerEvent&lt;/code&gt; module to &lt;code&gt;PieceReactor&lt;/code&gt; the exposure to important variables is preserved and readily accessible to the proc objects. This can significantly reduce the headaches caused when trying to things together, &lt;strong&gt;just so it can work&lt;/strong&gt;. I hope to delve deeper into this topic later on!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://wismer.github.io/2015/03/08/eventual-discovery.html</link>
+        <guid isPermaLink="true">http://wismer.github.io/2015/03/08/eventual-discovery.html</guid>
+        
+        <category>event-driven,</category>
+        
+        <category>ruby</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
