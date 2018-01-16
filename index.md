@@ -3,4 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
+title: "All Things in Good Time"
 ---
+
+# Please excuse the appearance! I am currently re-configuring my blog, since I accidentally removed my old jekyll setup!
