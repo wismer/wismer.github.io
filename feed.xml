@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-27T10:59:12-04:00</updated><id>http://localhost:4000/</id><title type="html">All Things In Good Time</title><subtitle>Programming, Stoicism, Dungeons and Dragons, Oh My!</subtitle><entry><title type="html">The Little QR Code Generator That Could</title><link href="http://localhost:4000/qr/rust/programming/2018/04/24/first-rust-project.html" rel="alternate" type="text/html" title="The Little QR Code Generator That Could" /><published>2018-04-24T15:12:39-04:00</published><updated>2018-04-24T15:12:39-04:00</updated><id>http://localhost:4000/qr/rust/programming/2018/04/24/first-rust-project</id><content type="html" xml:base="http://localhost:4000/qr/rust/programming/2018/04/24/first-rust-project.html">&lt;p&gt;A year or so ago, I wanted to learn something far outside my comfort zone and chose to start learning Rust. 
+A low-level systems programming language, &lt;a href=&quot;https://rust-lang.org&quot;&gt;Rust&lt;/a&gt; had things that I had no experience with, like strict typing, generic types, and the way Rust handles memory. I learn best by doing, so periodically I would try to learn some by making something, like my &lt;a href=&quot;https://github.com/wismer/caesar-cipher&quot;&gt;caesar-ciper&lt;/a&gt;. But they were never deep enough to make me really grok the language.&lt;/p&gt;
+
+&lt;p&gt;Eventually I settled on making this:&lt;/p&gt;
+
+&lt;div class=&quot;qr-hold&quot;&gt;
+  &lt;img alt=&quot;SCAN ME!&quot; src=&quot;/assets/img/qr.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;qr-encoder&quot;&gt;QR Encoder&lt;/h3&gt;
+
+&lt;p&gt;I plan to delve more deeply into this in further posts, but let me finish by saying
+that if you are looking for a project as a vehicle to learn a new language, you can’t
+go wrong with creating a QR code generator!&lt;/p&gt;
+
+&lt;style&gt;
+.qr-hold {
+  margin: 0 auto;
+  width: 400px;
+}
+&lt;/style&gt;</content><author><name></name></author><summary type="html">A year or so ago, I wanted to learn something far outside my comfort zone and chose to start learning Rust. A low-level systems programming language, Rust had things that I had no experience with, like strict typing, generic types, and the way Rust handles memory. I learn best by doing, so periodically I would try to learn some by making something, like my caesar-ciper. But they were never deep enough to make me really grok the language.</summary></entry></feed>
