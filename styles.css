@@ -24,23 +24,33 @@ main {
     row-gap: 2em;
 }
 
-#title {
-    background-color: var(--bg-color-secondary);
-}
-
 html {
     height: 100%;
     background-color: var(--bg-color-primary);
 }
 
+#title {
+    background-color: var(--bg-color-secondary);
+    margin: 2px;
+    padding: 8px;
+}
+
+
+.title-container {
+    background-color: var(--bg-color-card);
+    padding: 8px;
+}
 
 h1 {
     font-family: "Kolo LP";
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 section {
     font-family: garamond;
 }
+
 .primary {
     height: 40vh;
     width: 100%;
@@ -49,14 +59,11 @@ section {
 .card {
     background-color: var(--bg-color-card);
     padding: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
 }
 
 .card.card-section {
-    box-shadow: -1em -1em var(--bg-color-secondary);
     min-height: 20vh;
-    width: 100%;
+    border: solid var(--bg-color-secondary) 8px;
 }
 
 .card a {
