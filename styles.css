@@ -1,0 +1,22 @@
+:root {
+    --bg-color-primary: #2d2c2c;
+    --bg-color-secondary: rgb(30, 35, 30);
+}
+
+main {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(
+        var(--bg-color-primary),
+        var(--bg-color-secondary)
+    );
+}
+
