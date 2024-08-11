@@ -1,22 +1,78 @@
+@font-face {
+    font-family: "garamond";
+    src: url(./EBGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Kolo LP";
+    src: url(./Kolo\ LP\ Regular.otf);
+}
+
+
 :root {
-    --bg-color-primary: #2d2c2c;
-    --bg-color-secondary: rgb(30, 35, 30);
+    --bg-color-primary: #1e231e;
+    --bg-color-secondary: #536153;
+    --bg-color-card: #c3bbbb;
+    --link-color: #602f6a;
 }
 
 main {
     margin: 0 auto;
     width: 50%;
     text-align: center;
+    display: grid;
+    row-gap: 2em;
+}
+
+#title {
+    background-color: var(--bg-color-secondary);
 }
 
 html {
     height: 100%;
+    background-color: var(--bg-color-primary);
 }
 
-body {
-    background: linear-gradient(
-        var(--bg-color-primary),
-        var(--bg-color-secondary)
-    );
+
+h1 {
+    font-family: "Kolo LP";
 }
 
+section {
+    font-family: garamond;
+}
+.primary {
+    height: 40vh;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--bg-color-card);
+    padding: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.card.card-section {
+    box-shadow: -1em -1em var(--bg-color-secondary);
+    min-height: 20vh;
+    width: 100%;
+}
+
+.card a {
+    color: var(--link-color);
+}
+
+/* 
+    Color theming
+    Pine 4 Dot Zollie (Palette Scout)
+    It is possibly....
+    color: #40604e
+*/
+
+/* 
+main {
+    /* maybe? */
+    /* background-color: #40604e;
+    background-color: #455c4f;
+} */
