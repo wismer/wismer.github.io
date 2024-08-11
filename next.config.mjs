@@ -4,7 +4,7 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 	},
-	basePath: '/wismer.github.io',
+	basePath: '/docs',
 };
 
 export default nextConfig;
