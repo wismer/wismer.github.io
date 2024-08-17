@@ -18,10 +18,12 @@
 
 main {
     margin: 0 auto;
-    width: 50%;
     text-align: center;
     display: grid;
     row-gap: 2em;
+    height: 50vh;
+    width: 70vw;
+    background-image: url("/bg.jpg");
 }
 
 html {
