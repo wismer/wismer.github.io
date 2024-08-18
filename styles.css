@@ -23,6 +23,10 @@
     src: url(./brandon-grotesque-medium-italic.otf);
 }
 
+svg {
+    display: hidden;
+    position: fixed;
+}
 
 :root {
     --bg-color-primary: #1e231e;
@@ -31,25 +35,46 @@
     --link-color: #602f6a;
 }
 
+.dvd-logo {
+  display: none;
+  position: fixed;
+  width: 15%;
+  height: 15%;
+}
+
+.active.dvd-logo {
+  display: block;
+  z-index: 1;
+}
+
+.dvd-container.darken {
+  background-color: #1e231e;
+}
 
 body {
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 main {
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("./bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+main.darken {
+  filter: brightness(10%);
 }
 
 html {
-    height: 100%;
-    background-color: var(--bg-color-primary);
+  height: 100%;
+  background-color: var(--bg-color-primary);
 }
 
 #title {
@@ -80,33 +105,30 @@ html {
 }
 
 h1 {
-    align-self: center;
-    font-family: "Kolo LP";
-}
-
-h1.card {
+  align-self: center;
+  font-family: "Kolo LP";
 }
 
 section {
-    font-family: garamond;
+  font-family: garamond;
 }
 
 .primary {
-    height: 40vh;
-    width: 100%;
+  height: 40vh;
+  width: 100%;
 }
 
 .card {
-    background-color: var(--bg-color-card);
+  background-color: var(--bg-color-card);
 }
 
 .card.card-section {
-    min-height: 20vh;
-    border: solid var(--bg-color-secondary) 8px;
+  min-height: 20vh;
+  border: solid var(--bg-color-secondary) 8px;
 }
 
 .card a {
-    color: var(--link-color);
+  color: var(--link-color);
 }
 
 /* 
