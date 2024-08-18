@@ -89,16 +89,24 @@
       </main>
       <script type="application/javascript">
         let activeIdx = 0;
+        let left;
+        let topVal;
+
         function updateColor() {
           const logos = document.querySelectorAll('.dvd-logo');
           logos.forEach((e, idx) => {
             if (e.classList.contains('active')) {
               e.classList.remove('active');
+              left = e.style.left;
+              topVal = e.style.top;
               activeIdx = idx;
             }
           });
           activeIdx = activeIdx === 6 ? 0 : activeIdx + 1;
-          logos.item(activeIdx).classList.add('active');
+          let nextActiveLogo = logos.item(activeIdx);
+          nextActiveLogo.classList.add('active');
+          nextActiveLogo.style.left = left;
+          nextActiveLogo.style.top = topVal;
         }
 
         window.updateColor = updateColor;
@@ -229,9 +237,9 @@
                   }
               }
 
-              // if (prevDirection !== direction) {
-              //   updateColor();
-              // }
+              if (prevDirection !== direction) {
+                updateColor();
+              }
   
               // if (coords[0] === window.innerHeight && direction === 'SE') {
               //   direction = 'NE';
