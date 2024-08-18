@@ -161,6 +161,7 @@
           document.addEventListener('keypress', reset);
           document.addEventListener('click', reset);
           document.addEventListener('mousemove', reset);
+          document.addEventListener('touchstart', reset);
           // document.addEventListener('click', () => {
           //   fd && clearTimeout(fd);
           //   setupTimer();
@@ -214,6 +215,7 @@
                 case 'NW':
                   if (x === 0) {
                     direction = 'SW';
+                    console.log("bounce", x, cx);
                   } else if (y === 0) {
                     direction = 'NE';
                   }
@@ -222,6 +224,7 @@
                   if (y === 0) {
                     direction = 'SE';
                   } else if ((x + logo.height) >= cx) {
+                    console.log("bounce", x, cx)
                     direction = 'NW';
                   }
               }
