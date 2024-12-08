@@ -65,6 +65,25 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   filter: none;
+  flex-flow: column;
+}
+
+section {
+    font-family: 'Kolo LP';
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.detail-card {
+    background-color: var(--bg-color-card);
+    width:  max(65%, 600px);
+}
+
+
+section .card-body {
+    border: 2px solid var(--bg-color-secondary);
+    margin: 2px;
 }
 
 main.darken {
@@ -81,7 +100,6 @@ html {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    border: 2px solid var(--bg-color-secondary);
 }
 
 #title > h1 {
@@ -91,25 +109,39 @@ html {
 /* change porportions */
 
 .title-container {
+    /* background-image: url(./smallframe.svg);
+    min-height: 12em;
+    background-position: cover;
+    background-repeat: no-repeat; */
     box-sizing: border-box;
     background-color: var(--bg-color-card);
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-shadow: 0 0 1px #fff inset;
-    height: 340px;
     width: 340px;
     padding: 2px;
-    display: grid;
     margin: auto;
+}
+
+a:visited {
+    color: unset;
+}
+
+a {
+    text-decoration-style: dotted;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 h1 {
   align-self: center;
   font-family: "Kolo LP";
-}
-
-section {
-  font-family: garamond;
 }
 
 .primary {
@@ -129,6 +161,19 @@ section {
 .card a {
   color: var(--link-color);
 }
+/* 
+@media (max-width: 769px) {
+  main {
+    background-position: ;
+  }
+} */
+
+@media (min-width: 770px) {
+  main {
+    background-position: center;
+  }
+}
+
 
 /* 
     Color theming
