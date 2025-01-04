@@ -70,6 +70,10 @@ main {
   flex-flow: column;
 }
 
+#main-title h1.card-title {
+  margin: 3em 0 3em 0;
+}
+
 section {
     font-family: 'Kolo LP';
     margin-top: 2em;
@@ -91,6 +95,7 @@ section .card-body {
 
 section .card-body .card-title {
   padding-bottom: 1em;
+  text-decoration: underline;
 }
 
 main.darken {
