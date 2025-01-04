@@ -86,6 +86,11 @@ section.detail-card {
 section .card-body {
     border: 2px solid var(--bg-color-secondary);
     margin: 2px;
+    padding: 2em 0;
+}
+
+section .card-body .card-title {
+  padding-bottom: 1em;
 }
 
 main.darken {
@@ -176,17 +181,6 @@ h1 {
   }
 }
 
-
-/* 
-    Color theming
-    Pine 4 Dot Zollie (Palette Scout)
-    It is possibly....
-    color: #40604e
-*/
-
-/* 
-main {
-    /* maybe? */
-    /* background-color: #40604e;
-    background-color: #455c4f;
-} */
+* {
+  margin: 0;
+}
