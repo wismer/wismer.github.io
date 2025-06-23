@@ -24,12 +24,12 @@
 }
 
 svg {
-    display: hidden;
-    position: fixed;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 :root {
-    --bg-color-primary: #1e231e;
+    --bg-color-primary: #eeffee;
     --bg-color-secondary: #536153;
     --bg-color-card: #fdf3d8;
     --link-color: #602f6a;
@@ -60,7 +60,7 @@ main {
   text-align: center;
   display: flex;
   width: 100vw;
-  background-image: url("./bg.jpg");
+  /* background-image: url("./bg.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -103,7 +103,6 @@ main.darken {
 }
 
 html {
-  height: 100%;
   background-color: var(--bg-color-primary);
 }
 
@@ -157,7 +156,7 @@ h1 {
 }
 
 .primary {
-  height: 40vh;
+  /* height: 40vh; */
   width: 100%;
 }
 
