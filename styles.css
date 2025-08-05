@@ -24,8 +24,8 @@
 }
 
 svg {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 :root {
@@ -72,7 +72,6 @@ main {
 
 a {
     color: black;
-    font-size: 2rem;
     letter-spacing: 0.25rem;
 }
 
@@ -142,7 +141,17 @@ a:visited {
 }
 
 a {
-    text-decoration-style: dotted;
+    text-decoration: none;
+}
+
+iframe {
+    min-width: 80%;
+    height: 30vh;
+    padding-top: 16px;
+}
+
+section {
+    padding-top: 16px;
 }
 
 ul {
@@ -182,15 +191,61 @@ h1 {
   }
 } */
 
+main {
+    display: block;
+    height: 30vh;
+    width: 100vw;
+    position: inherit;
+}
 
-@media (min-width: 770px) {
-  main {
+#info {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+#main {
+    background-image: url(./mockup.svg);
+    height: 30vh;
     background-position: center;
-  }
+    background-repeat: no-repeat;
+}
 
-  main svg {
-    height: 800px;
-  }
+h1 {
+    border-bottom: 8px solid black;
+}
+
+p {
+    margin-top: 12px;
+}
+
+@media screen and (width >= 52em) {
+    #main {
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+    }
+
+    #info {
+        margin-left: 50vw;
+        margin-right: 5vw;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    #info {
+        width: 50%;
+    }
 }
 
 
