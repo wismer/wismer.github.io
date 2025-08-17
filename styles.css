@@ -140,9 +140,6 @@ a:visited {
     color: unset;
 }
 
-a {
-    text-decoration: none;
-}
 
 iframe {
     min-width: 80%;
@@ -240,7 +237,7 @@ p {
     }
 
     p {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     #info {
